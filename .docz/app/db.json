@@ -1,0 +1,62 @@
+{
+  "config": {
+    "title": "Exemples de code OpenLayers / React",
+    "description": "A simple starter to get up and developing quickly with Gatsby",
+    "menu": [],
+    "version": "0.1.0",
+    "repository": false,
+    "native": false,
+    "codeSandbox": true,
+    "themeConfig": {
+      "linesToScrollEditor": 70
+    },
+    "separator": "-",
+    "base": "/docs",
+    "ignore": [
+      "**/blog/**",
+      "readme.md"
+    ]
+  },
+  "props": [
+    {
+      "key": "docs/MapView.jsx",
+      "value": [
+        {
+          "description": "----------------------\nAffficher une carte\n----------------------\nConcepts de base - Le composant principal d' OpenLayers\nhttps://openlayers.org/en/latest/doc/tutorials/concepts.html\n\nConventions de module et de nommage\nhttps://openlayers.org/en/latest/doc/tutorials/background.html\n\nMettre une carte sur une page\nhttps://openlayers.org/en/latest/doc/quickstart.html",
+          "displayName": "MapView",
+          "methods": [
+            {
+              "name": "updateMap",
+              "docblock": null,
+              "modifiers": [],
+              "params": [],
+              "returns": null
+            }
+          ],
+          "actualName": "MapView"
+        }
+      ]
+    }
+  ],
+  "entries": [
+    {
+      "key": "docs/index.mdx",
+      "value": {
+        "name": "Afficher une carte",
+        "route": "/docs/docs",
+        "id": "73498ad0e1e62a714b08085d318f9de1",
+        "filepath": "docs/index.mdx",
+        "link": "https://github.com/gatsbyjs/gatsby-starter-default/edit/master/websites/open-gatsby/docs/index.mdx",
+        "slug": "docs-index",
+        "menu": "",
+        "headings": [
+          {
+            "slug": "le-conteneur-de-la-carte-et-la-vue",
+            "depth": 2,
+            "value": "Le conteneur de la carte et la vue"
+          }
+        ]
+      }
+    }
+  ]
+}
