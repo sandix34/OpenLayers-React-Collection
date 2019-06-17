@@ -2,7 +2,14 @@
   "config": {
     "title": "Exemples de code OpenLayers / React",
     "description": "A simple starter to get up and developing quickly with Gatsby",
-    "menu": [],
+    "menu": [
+      "Introduction",
+      "La classe Map",
+      "Les couches SIG",
+      "Les styles",
+      "Les groupes de couches, clusters et overlays",
+      "Les interractions"
+    ],
     "version": "0.1.0",
     "repository": false,
     "native": false,
@@ -36,24 +43,170 @@
           "actualName": "MapView"
         }
       ]
+    },
+    {
+      "key": "docs/Projection.jsx",
+      "value": [
+        {
+          "description": "-----------------------------\nChanger la projection\n-----------------------------\n\nIl est possible de spécifier plusieurs options dans la vue\ncomme la résolution de la carte, la rotation et la projection \nol.proj  qui par défaut, est l'EPSG:3857 et l'EPSG:4326 est aussi chargée.\nLe code suivant introduit le centrage de la \ncarte avec une transformation de la projection des coordonnées\ngéographiques.\n\nhttps://openlayers.org/en/latest/apidoc/module-ol_proj.html",
+          "displayName": "Projection",
+          "methods": [
+            {
+              "name": "updateMap",
+              "docblock": null,
+              "modifiers": [],
+              "params": [],
+              "returns": null
+            }
+          ],
+          "actualName": "Projection"
+        }
+      ]
+    },
+    {
+      "key": "docs/Projection2.jsx",
+      "value": [
+        {
+          "description": "------------------------\nProjections différentes\n------------------------\nPour utiliser des projections différentes, que ce soit dans l'option même de la vue ou\n pour les couches SIG, il est indispensable de charger la libraire Proj4js.\n(http://proj4js.org/) \n\nDans l'exemple ci-après, on utilise la projection Lambert 93 (EPSG:2154) \nque l'on déclare dans un premier temps puis on l'affecte à l'objet ol.View.",
+          "displayName": "Projection2",
+          "methods": [
+            {
+              "name": "updateMap",
+              "docblock": null,
+              "modifiers": [],
+              "params": [],
+              "returns": null
+            }
+          ],
+          "actualName": "Projection2"
+        }
+      ]
+    },
+    {
+      "key": "docs/Controles.jsx",
+      "value": [
+        {
+          "description": "--------------\nLes contrôles\n--------------\n\nLes contrôles ol.control  sont d'autres composantes de la classe Map.\nChaque méthode possède ses propres options.\nIl est possible de modifier le style CSS ou d'ajouter certaines fonctions javascript\nOpenLayers montre par exemple comment modifier le style CSS (couleur, place des éléments, etc) du ZoomSlider\nhttps://openlayers.org/en/latest/examples/zoomslider.html",
+          "displayName": "Controles",
+          "methods": [
+            {
+              "name": "updateMap",
+              "docblock": null,
+              "modifiers": [],
+              "params": [],
+              "returns": null
+            }
+          ],
+          "actualName": "Controles"
+        }
+      ]
+    },
+    {
+      "key": "docs/Evenements.jsx",
+      "value": [
+        {
+          "description": "----------------------\nMéthodes et évènements \n----------------------\nDe nombreuses méthodes sont liées à la classe Map et elles peuvent être déclenchées à partir d'actions appelées \"Fires\".\nLes plus utilisées sont on(type, listener, opt_this), once(type, listener, opt_this) qui contiennent \nune fonction afin d'obtenir des informations de la classe \"parent\".\nCes méthodes sont aussi héritées pour d'autres classes comme celles prenant en charge les sources de données.\n\nDans la version actuelle d'OL, on peut classer les déclencheurs des méthodes selon cinq types :\n\nol.events.Event : un évènement quelconque par le fire change.\n\nol.Object.Event : Les évènements liés à un objet de la classe Map.\n\nol.MapBrowserEvent : Les évènements liés au navigateur web (click, dblclick, pointerdrag, pointermove, singleclick).\n\nol.MapEvent : Les évènement liés à la carte (moveend, movestart, postrender).\n\nol.render.Event : Les évènements liés à un rendu du document (postcompose, precompose).\n\nL'exemple ci-après montre comment obtenir le niveau de zoom dans la console à la fin du défilement de la carte.",
+          "displayName": "Evenements",
+          "methods": [
+            {
+              "name": "updateMap",
+              "docblock": null,
+              "modifiers": [],
+              "params": [],
+              "returns": null
+            }
+          ],
+          "actualName": "Evenements"
+        }
+      ]
     }
   ],
   "entries": [
     {
-      "key": "docs/index.mdx",
+      "key": "docs/Controles.mdx",
+      "value": {
+        "name": "Les contrôles",
+        "menu": "La classe Map",
+        "id": "fad8db50805ef97f02433c0fc8b2ebbf",
+        "filepath": "docs/Controles.mdx",
+        "link": "https://github.com/gatsbyjs/gatsby-starter-default/edit/master/docs/Controles.mdx",
+        "slug": "docs-controles",
+        "route": "/docs/docs-controles",
+        "headings": []
+      }
+    },
+    {
+      "key": "docs/Evenements.mdx",
+      "value": {
+        "name": "Les évènements",
+        "menu": "La classe Map",
+        "id": "cfb6abc84cb003ccd37a5f64a189a97f",
+        "filepath": "docs/Evenements.mdx",
+        "link": "https://github.com/gatsbyjs/gatsby-starter-default/edit/master/docs/Evenements.mdx",
+        "slug": "docs-evenements",
+        "route": "/docs/docs-evenements",
+        "headings": []
+      }
+    },
+    {
+      "key": "docs/MapView.mdx",
       "value": {
         "name": "Afficher une carte",
-        "route": "/docs/docs",
+        "menu": "La classe Map",
+        "id": "d05f4ab5e2fdd38b07456679ad9129f1",
+        "filepath": "docs/MapView.mdx",
+        "link": "https://github.com/gatsbyjs/gatsby-starter-default/edit/master/docs/MapView.mdx",
+        "slug": "docs-map-view",
+        "route": "/docs/docs-map-view",
+        "headings": []
+      }
+    },
+    {
+      "key": "docs/Projection.mdx",
+      "value": {
+        "name": "Changer la projection",
+        "menu": "La classe Map",
+        "id": "1f706eef4d474381bc21e8e71c8cdd37",
+        "filepath": "docs/Projection.mdx",
+        "link": "https://github.com/gatsbyjs/gatsby-starter-default/edit/master/docs/Projection.mdx",
+        "slug": "docs-projection",
+        "route": "/docs/docs-projection",
+        "headings": []
+      }
+    },
+    {
+      "key": "docs/Projection2.mdx",
+      "value": {
+        "name": "Projection différente",
+        "menu": "La classe Map",
+        "id": "5bb6076fcd20c4e7968ec3e2d86732f3",
+        "filepath": "docs/Projection2.mdx",
+        "link": "https://github.com/gatsbyjs/gatsby-starter-default/edit/master/docs/Projection2.mdx",
+        "slug": "docs-projection2",
+        "route": "/docs/docs-projection2",
+        "headings": []
+      }
+    },
+    {
+      "key": "docs/index.mdx",
+      "value": {
+        "name": "Introduction",
+        "route": "/docs/",
         "id": "73498ad0e1e62a714b08085d318f9de1",
         "filepath": "docs/index.mdx",
-        "link": "https://github.com/gatsbyjs/gatsby-starter-default/edit/master/websites/open-gatsby/docs/index.mdx",
+        "link": "https://github.com/gatsbyjs/gatsby-starter-default/edit/master/docs/index.mdx",
         "slug": "docs-index",
         "menu": "",
         "headings": [
           {
-            "slug": "le-conteneur-de-la-carte-et-la-vue",
+            "slug": "getting-started",
+            "depth": 1,
+            "value": "Getting Started"
+          },
+          {
+            "slug": "hello-world",
             "depth": 2,
-            "value": "Le conteneur de la carte et la vue"
+            "value": "Hello world"
           }
         ]
       }
