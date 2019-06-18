@@ -38,16 +38,16 @@ class CarteWMS extends Component {
     super(props);
 
     this.state = { 
-        center: [-8233510, 4980620], 
-        zoom: 5 
+        center: [0, 0], 
+        zoom: 2 
     };
 
     // Déclaration de la source de la couche en format WMS Tuilé 
     this.sourceWMSTile = new TileWMS({
 	// Chargement du lien WMS 
-	url: 'https://map.geomatick.com/geoserver/wms',
+	url: 'https://ahocevar.com/geoserver/wms',
 	// Chargement de l'espace de travail : couche 
-	params: {'LAYERS': 'topp:states', 'TILED': true},
+	params: {'LAYERS': 'ne:ne', 'TILED': true},
 	serverType: 'geoserver'
     })
     // Déclaration de la couche WMS Tuilé
@@ -59,9 +59,9 @@ class CarteWMS extends Component {
     // Déclaration de la source de la couche en format WMS Image
     this.sourceWMSImage = new ImageWMS({
 	// Chargement du lien WMS 
-	url: 'https://map.geomatick.com/geoserver/wms',
+	url: 'https://ahocevar.com/geoserver/wms',
 	// Chargement de l'espace de travail : couche 
-	params: {'LAYERS': 'tiger:poly_landmarks'},
+	params: {'LAYERS': 'ne:ne'},
 	serverType: 'geoserver'
     });
     // Déclaration de la couche WMS 
