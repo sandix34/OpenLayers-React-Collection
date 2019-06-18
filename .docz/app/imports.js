@@ -1,4 +1,12 @@
 export const imports = {
+  'docs/CarteWFS.mdx': () =>
+    import(
+      /* webpackPrefetch: true, webpackChunkName: "docs-carte-wfs" */ 'docs/CarteWFS.mdx'
+    ),
+  'docs/CarteWMS.mdx': () =>
+    import(
+      /* webpackPrefetch: true, webpackChunkName: "docs-carte-wms" */ 'docs/CarteWMS.mdx'
+    ),
   'docs/Controles.mdx': () =>
     import(
       /* webpackPrefetch: true, webpackChunkName: "docs-controles" */ 'docs/Controles.mdx'
