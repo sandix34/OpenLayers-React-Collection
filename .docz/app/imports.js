@@ -19,6 +19,14 @@ export const imports = {
     import(
       /* webpackPrefetch: true, webpackChunkName: "docs-projection2" */ 'docs/Projection2.mdx'
     ),
+  'docs/VecteurFichier.mdx': () =>
+    import(
+      /* webpackPrefetch: true, webpackChunkName: "docs-vecteur-fichier" */ 'docs/VecteurFichier.mdx'
+    ),
+  'docs/VecteurGeometry.mdx': () =>
+    import(
+      /* webpackPrefetch: true, webpackChunkName: "docs-vecteur-geometry" */ 'docs/VecteurGeometry.mdx'
+    ),
   'docs/index.mdx': () =>
     import(
       /* webpackPrefetch: true, webpackChunkName: "docs-index" */ 'docs/index.mdx'
