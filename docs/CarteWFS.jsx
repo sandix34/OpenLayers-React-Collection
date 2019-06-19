@@ -40,7 +40,7 @@ class CarteWFS extends Component {
 	'version=1.1.0&request=GetFeature&typename=tiger:tiger_roads&' +
 	'outputFormat=application/json',
 	format: new GeoJSON(),
-	serverType: 'geoserver'
+  serverType: 'geoserver'
     });
 
     // Déclaration de la couche WFS 

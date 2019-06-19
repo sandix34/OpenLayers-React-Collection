@@ -18,13 +18,51 @@
       "linesToScrollEditor": 70
     },
     "separator": "-",
-    "base": "/docs",
+    "base": "/",
     "ignore": [
       "**/blog/**",
       "readme.md"
     ]
   },
   "props": [
+    {
+      "key": "docs/CarteWFS.jsx",
+      "value": [
+        {
+          "description": "-----------------\nLe protocole WFS\n----------------\n\nLe WFS est un protocole HTTP d’échange de données vecteurs qui permet “côté client”\nde connaître les structures et les sources de la donnée spatiale.\nEn clair, le serveur cartographique fournit une URL avec plusieurs paramètres\npour appeler et lister les entités du vecteur dans un format spécifique (XML, JSON, etc).\n\nDans OL, il est alors possible de prendre en charge le protocole WFS \ncomme une source de données vectorielles externe en précisant \nle format de l'application de l'URL (ici : JSON):",
+          "displayName": "CarteWFS",
+          "methods": [
+            {
+              "name": "updateMap",
+              "docblock": null,
+              "modifiers": [],
+              "params": [],
+              "returns": null
+            }
+          ],
+          "actualName": "CarteWFS"
+        }
+      ]
+    },
+    {
+      "key": "docs/CarteWMS.jsx",
+      "value": [
+        {
+          "description": "----------------\nLe protocole WMS\n----------------\nLe WMS fournit une image géoréférencée pour laquelle plusieurs \nopérations sont disponibles\ncomme afficher une donnée avec la géométrie\net les valeurs attributaires correspondantes.\nOn note que la donnée spatiale transmise par le serveur \ncartographique peut être à l'origine un vecteur ou un raster.\n\nDans OL, il existe plusieurs manières de charger les protocoles WMS :\n\n- En tant qu'image par la classe :\nol.source.ImageWMS  pour la source de données\nla classe ol.layer.Image  pour afficher la couche SIG\n\n- En tant que donnée tuilée depuis un serveur WMS par la classe :\nol.source.TileWMS  pour la source\nol.layer.Tile  pour la couche SIG\n\nL'exemple ci-après montre comment utiliser des flux WMS en format Tuilé et Image :",
+          "displayName": "CarteWMS",
+          "methods": [
+            {
+              "name": "updateMap",
+              "docblock": null,
+              "modifiers": [],
+              "params": [],
+              "returns": null
+            }
+          ],
+          "actualName": "CarteWMS"
+        }
+      ]
+    },
     {
       "key": "docs/Controles.jsx",
       "value": [
@@ -121,25 +159,6 @@
       ]
     },
     {
-      "key": "docs/VecteurGeometry.jsx",
-      "value": [
-        {
-          "description": "Un vecteur est défini par les entités géographiques qui le composent.\nCes dernières ont une géométrie qui peut être différente les unes des autres \ndans un même vecteur et des valeurs relatives aux champs attributaires de la donnée.\nLes géométries sont soit un point, une ligne, un polygone et lorsque plusieurs entités \nde géométries différentes composent un vecteur, on parle de collection d'objets.\nOL décompose le vecteur en trois éléments :\n - une ou plusieurs entités ol.Feature avec leurs géométries et leurs attributs ;\n - une source de données ol.Source.Vector qui prend en charge les entités. \n   Elle est appelée via un fichier externe ou créée directement dans le script ;\n - la couche SIG ol.Layer.Vector  qui charge la source.\n Les classes des entités, des sources et des données vectorielles :\nLa classe ol.Feature représentant une entité géographique est caractérisée par plusieurs\nsetters et getters, ainsi il est possible d'obtenir ou d'intégrer plusieurs composantes comme :\nla géométrie setGeometry(geometry)/getGeometry(geometry),\nun identifiant unique setId()/getId(),\nune valeur attributaire d'un champ key set(key)/get(key),\nun style ou une fonction de style setStyle()/getStyle().\nEn outre, il est possible d'obtenir l'ensemble des champs attributaires par la méthode getKeys() et l'objet \nde l'entité regroupant la geométrie, les champs et leurs valeurs attributaires : \ngetProperties().\nPar défaut, le nom du champs de la géométrie est geometry.\nCréation d'entités géographiques :\nCommençons par la création de géométries indépendantes d'une source de données externes.\nLes différentes types de géométrie sont définies par la classe ol.geom suivie du type de géométrie : \nPoint, LineString, LinearRing, Polygon, MultiPoint, MultiLineString, MultiPolygon, GeometryCollection, Circle.\nChaque géométrie est composée par un ou des points définis par des coordonnées géographiques X (la longitude) \net Y (la latitude).\nLe code ci-après montre la création d'un point, d'une ligne et d'un polygone.",
-          "displayName": "VecteurGeometry",
-          "methods": [
-            {
-              "name": "updateMap",
-              "docblock": null,
-              "modifiers": [],
-              "params": [],
-              "returns": null
-            }
-          ],
-          "actualName": "VecteurGeometry"
-        }
-      ]
-    },
-    {
       "key": "docs/VecteurFichier.jsx",
       "value": [
         {
@@ -159,11 +178,11 @@
       ]
     },
     {
-      "key": "docs/CarteWFS.jsx",
+      "key": "docs/VecteurGeometry.jsx",
       "value": [
         {
-          "description": "-----------------\nLe protocole WFS\n----------------\n\nLe WFS est un protocole HTTP d’échange de données vecteurs qui permet “côté client”\nde connaître les structures et les sources de la donnée spatiale.\nEn clair, le serveur cartographique fournit une URL avec plusieurs paramètres\npour appeler et lister les entités du vecteur dans un format spécifique (XML, JSON, etc).\n\nDans OL, il est alors possible de prendre en charge le protocole WFS \ncomme une source de données vectorielles externe en précisant \nle format de l'application de l'URL (ici : JSON):",
-          "displayName": "CarteWFS",
+          "description": "Un vecteur est défini par les entités géographiques qui le composent.\nCes dernières ont une géométrie qui peut être différente les unes des autres \ndans un même vecteur et des valeurs relatives aux champs attributaires de la donnée.\nLes géométries sont soit un point, une ligne, un polygone et lorsque plusieurs entités \nde géométries différentes composent un vecteur, on parle de collection d'objets.\nOL décompose le vecteur en trois éléments :\n - une ou plusieurs entités ol.Feature avec leurs géométries et leurs attributs ;\n - une source de données ol.Source.Vector qui prend en charge les entités. \n   Elle est appelée via un fichier externe ou créée directement dans le script ;\n - la couche SIG ol.Layer.Vector  qui charge la source.\n Les classes des entités, des sources et des données vectorielles :\nLa classe ol.Feature représentant une entité géographique est caractérisée par plusieurs\nsetters et getters, ainsi il est possible d'obtenir ou d'intégrer plusieurs composantes comme :\nla géométrie setGeometry(geometry)/getGeometry(geometry),\nun identifiant unique setId()/getId(),\nune valeur attributaire d'un champ key set(key)/get(key),\nun style ou une fonction de style setStyle()/getStyle().\nEn outre, il est possible d'obtenir l'ensemble des champs attributaires par la méthode getKeys() et l'objet \nde l'entité regroupant la geométrie, les champs et leurs valeurs attributaires : \ngetProperties().\nPar défaut, le nom du champs de la géométrie est geometry.\nCréation d'entités géographiques :\nCommençons par la création de géométries indépendantes d'une source de données externes.\nLes différentes types de géométrie sont définies par la classe ol.geom suivie du type de géométrie : \nPoint, LineString, LinearRing, Polygon, MultiPoint, MultiLineString, MultiPolygon, GeometryCollection, Circle.\nChaque géométrie est composée par un ou des points définis par des coordonnées géographiques X (la longitude) \net Y (la latitude).\nLe code ci-après montre la création d'un point, d'une ligne et d'un polygone.",
+          "displayName": "VecteurGeometry",
           "methods": [
             {
               "name": "updateMap",
@@ -173,16 +192,16 @@
               "returns": null
             }
           ],
-          "actualName": "CarteWFS"
+          "actualName": "VecteurGeometry"
         }
       ]
     },
     {
-      "key": "docs/CarteWMS.jsx",
+      "key": "docs/FondCarteStamenTerrain.jsx",
       "value": [
         {
-          "description": "----------------\nLe protocole WMS\n----------------\nLe WMS fournit une image géoréférencée pour laquelle plusieurs \nopérations sont disponibles\ncomme afficher une donnée avec la géométrie\net les valeurs attributaires correspondantes.\nOn note que la donnée spatiale transmise par le serveur \ncartographique peut être à l'origine un vecteur ou un raster.\n\nDans OL, il existe plusieurs manières de charger les protocoles WMS :\n\n- En tant qu'image par la classe :\nol.source.ImageWMS  pour la source de données\nla classe ol.layer.Image  pour afficher la couche SIG\n\n- En tant que donnée tuilée depuis un serveur WMS par la classe :\nol.source.TileWMS  pour la source\nol.layer.Tile  pour la couche SIG\n\nL'exemple ci-après montre comment utiliser des flux WMS en format Tuilé et Image :",
-          "displayName": "CarteWMS",
+          "description": "---------------------\nLes fonds de carte OL\n---------------------\n\nOn appelle communément fonds de carte,\nun ensemble de données géographiques compilées\nqui permettent de situer des vecteurs\net/ou des rasters spécifiques.\nLes fonds de carte ont une résolution spatiale\net des informations plus ou moins détaillées.\n\nOL implémente directement plusieurs d'entre eux dans son API,\nainsi on dispose des sources de données tuilées suivantes :\nBingMaps (avec clé),\nStamen,\nCartoDB (avec clé)\net OpenStreetMap (OSM).",
+          "displayName": "FondCarteStamenTerrain",
           "methods": [
             {
               "name": "updateMap",
@@ -192,7 +211,45 @@
               "returns": null
             }
           ],
-          "actualName": "CarteWMS"
+          "actualName": "FondCarteStamenTerrain"
+        }
+      ]
+    },
+    {
+      "key": "docs/FondCarteStamenToner.jsx",
+      "value": [
+        {
+          "description": "---------------------\nLes fonds de carte OL\n---------------------\n\nOn appelle communément fonds de carte,\nun ensemble de données géographiques compilées\nqui permettent de situer des vecteurs\net/ou des rasters spécifiques.\nLes fonds de carte ont une résolution spatiale\net des informations plus ou moins détaillées.\n\nOL implémente directement plusieurs d'entre eux dans son API,\nainsi on dispose des sources de données tuilées suivantes :\nBingMaps (avec clé),\nStamen,\nCartoDB (avec clé)\net OpenStreetMap (OSM).",
+          "displayName": "FondCarteStamenToner",
+          "methods": [
+            {
+              "name": "updateMap",
+              "docblock": null,
+              "modifiers": [],
+              "params": [],
+              "returns": null
+            }
+          ],
+          "actualName": "FondCarteStamenToner"
+        }
+      ]
+    },
+    {
+      "key": "docs/FondCarteStamenWatercolor.jsx",
+      "value": [
+        {
+          "description": "---------------------\nLes fonds de carte OL\n---------------------\n\nOn appelle communément fonds de carte,\nun ensemble de données géographiques compilées\nqui permettent de situer des vecteurs\net/ou des rasters spécifiques.\nLes fonds de carte ont une résolution spatiale\net des informations plus ou moins détaillées.\n\nOL implémente directement plusieurs d'entre eux dans son API,\nainsi on dispose des sources de données tuilées suivantes :\nBingMaps (avec clé),\nStamen,\nCartoDB (avec clé)\net OpenStreetMap (OSM).",
+          "displayName": "FondCarteStamenWatercolor",
+          "methods": [
+            {
+              "name": "updateMap",
+              "docblock": null,
+              "modifiers": [],
+              "params": [],
+              "returns": null
+            }
+          ],
+          "actualName": "FondCarteStamenWatercolor"
         }
       ]
     }
@@ -247,6 +304,45 @@
         "link": "https://github.com/gatsbyjs/gatsby-starter-default/edit/master/docs/Evenements.mdx",
         "slug": "docs-evenements",
         "route": "/docs/docs-evenements",
+        "headings": []
+      }
+    },
+    {
+      "key": "docs/FondCarteStamenTerrain.mdx",
+      "value": {
+        "name": "Fond de carte ol Stamen Terrain",
+        "menu": "Les couches SIG",
+        "id": "e82d1de497c802782e80de1116dd7627",
+        "filepath": "docs/FondCarteStamenTerrain.mdx",
+        "link": "https://github.com/gatsbyjs/gatsby-starter-default/edit/master/docs/FondCarteStamenTerrain.mdx",
+        "slug": "docs-fond-carte-stamen-terrain",
+        "route": "/docs/docs-fond-carte-stamen-terrain",
+        "headings": []
+      }
+    },
+    {
+      "key": "docs/FondCarteStamenToner.mdx",
+      "value": {
+        "name": "Fond de carte ol Stamen Toner",
+        "menu": "Les couches SIG",
+        "id": "8e3c11d5f8554a9db21da9e08ca66343",
+        "filepath": "docs/FondCarteStamenToner.mdx",
+        "link": "https://github.com/gatsbyjs/gatsby-starter-default/edit/master/docs/FondCarteStamenToner.mdx",
+        "slug": "docs-fond-carte-stamen-toner",
+        "route": "/docs/docs-fond-carte-stamen-toner",
+        "headings": []
+      }
+    },
+    {
+      "key": "docs/FondCarteStamenWatercolor.mdx",
+      "value": {
+        "name": "Fond de carte ol Stamen Water Color",
+        "menu": "Les couches SIG",
+        "id": "6313a5bb031d500c0fa22dc846b42c5e",
+        "filepath": "docs/FondCarteStamenWatercolor.mdx",
+        "link": "https://github.com/gatsbyjs/gatsby-starter-default/edit/master/docs/FondCarteStamenWatercolor.mdx",
+        "slug": "docs-fond-carte-stamen-watercolor",
+        "route": "/docs/docs-fond-carte-stamen-watercolor",
         "headings": []
       }
     },

@@ -15,6 +15,18 @@ export const imports = {
     import(
       /* webpackPrefetch: true, webpackChunkName: "docs-evenements" */ 'docs/Evenements.mdx'
     ),
+  'docs/FondCarteStamenTerrain.mdx': () =>
+    import(
+      /* webpackPrefetch: true, webpackChunkName: "docs-fond-carte-stamen-terrain" */ 'docs/FondCarteStamenTerrain.mdx'
+    ),
+  'docs/FondCarteStamenToner.mdx': () =>
+    import(
+      /* webpackPrefetch: true, webpackChunkName: "docs-fond-carte-stamen-toner" */ 'docs/FondCarteStamenToner.mdx'
+    ),
+  'docs/FondCarteStamenWatercolor.mdx': () =>
+    import(
+      /* webpackPrefetch: true, webpackChunkName: "docs-fond-carte-stamen-watercolor" */ 'docs/FondCarteStamenWatercolor.mdx'
+    ),
   'docs/MapView.mdx': () =>
     import(
       /* webpackPrefetch: true, webpackChunkName: "docs-map-view" */ 'docs/MapView.mdx'
