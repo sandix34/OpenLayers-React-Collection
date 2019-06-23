@@ -7,6 +7,10 @@ export const imports = {
     import(
       /* webpackPrefetch: true, webpackChunkName: "docs-carte-wms" */ 'docs/CarteWMS.mdx'
     ),
+  'docs/Clusters.mdx': () =>
+    import(
+      /* webpackPrefetch: true, webpackChunkName: "docs-clusters" */ 'docs/Clusters.mdx'
+    ),
   'docs/Controles.mdx': () =>
     import(
       /* webpackPrefetch: true, webpackChunkName: "docs-controles" */ 'docs/Controles.mdx'
