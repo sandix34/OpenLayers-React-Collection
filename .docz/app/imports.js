@@ -39,6 +39,10 @@ export const imports = {
     import(
       /* webpackPrefetch: true, webpackChunkName: "docs-projection2" */ 'docs/Projection2.mdx'
     ),
+  'docs/StylesGeometry.mdx': () =>
+    import(
+      /* webpackPrefetch: true, webpackChunkName: "docs-styles-geometry" */ 'docs/StylesGeometry.mdx'
+    ),
   'docs/VecteurFichier.mdx': () =>
     import(
       /* webpackPrefetch: true, webpackChunkName: "docs-vecteur-fichier" */ 'docs/VecteurFichier.mdx'

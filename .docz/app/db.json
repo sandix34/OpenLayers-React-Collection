@@ -45,25 +45,6 @@
       ]
     },
     {
-      "key": "docs/CarteWMS.jsx",
-      "value": [
-        {
-          "description": "----------------\nLe protocole WMS\n----------------\nLe WMS fournit une image géoréférencée pour laquelle plusieurs \nopérations sont disponibles\ncomme afficher une donnée avec la géométrie\net les valeurs attributaires correspondantes.\nOn note que la donnée spatiale transmise par le serveur \ncartographique peut être à l'origine un vecteur ou un raster.\n\nDans OL, il existe plusieurs manières de charger les protocoles WMS :\n\n- En tant qu'image par la classe :\nol.source.ImageWMS  pour la source de données\nla classe ol.layer.Image  pour afficher la couche SIG\n\n- En tant que donnée tuilée depuis un serveur WMS par la classe :\nol.source.TileWMS  pour la source\nol.layer.Tile  pour la couche SIG\n\nL'exemple ci-après montre comment utiliser des flux WMS en format Tuilé et Image :",
-          "displayName": "CarteWMS",
-          "methods": [
-            {
-              "name": "updateMap",
-              "docblock": null,
-              "modifiers": [],
-              "params": [],
-              "returns": null
-            }
-          ],
-          "actualName": "CarteWMS"
-        }
-      ]
-    },
-    {
       "key": "docs/Controles.jsx",
       "value": [
         {
@@ -83,6 +64,25 @@
       ]
     },
     {
+      "key": "docs/CarteWMS.jsx",
+      "value": [
+        {
+          "description": "----------------\nLe protocole WMS\n----------------\nLe WMS fournit une image géoréférencée pour laquelle plusieurs \nopérations sont disponibles\ncomme afficher une donnée avec la géométrie\net les valeurs attributaires correspondantes.\nOn note que la donnée spatiale transmise par le serveur \ncartographique peut être à l'origine un vecteur ou un raster.\n\nDans OL, il existe plusieurs manières de charger les protocoles WMS :\n\n- En tant qu'image par la classe :\nol.source.ImageWMS  pour la source de données\nla classe ol.layer.Image  pour afficher la couche SIG\n\n- En tant que donnée tuilée depuis un serveur WMS par la classe :\nol.source.TileWMS  pour la source\nol.layer.Tile  pour la couche SIG\n\nL'exemple ci-après montre comment utiliser des flux WMS en format Tuilé et Image :",
+          "displayName": "CarteWMS",
+          "methods": [
+            {
+              "name": "updateMap",
+              "docblock": null,
+              "modifiers": [],
+              "params": [],
+              "returns": null
+            }
+          ],
+          "actualName": "CarteWMS"
+        }
+      ]
+    },
+    {
       "key": "docs/Evenements.jsx",
       "value": [
         {
@@ -98,6 +98,63 @@
             }
           ],
           "actualName": "Evenements"
+        }
+      ]
+    },
+    {
+      "key": "docs/FondCarteStamenTerrain.jsx",
+      "value": [
+        {
+          "description": "---------------------\nLes fonds de carte OL\n---------------------\n\nOn appelle communément fonds de carte,\nun ensemble de données géographiques compilées\nqui permettent de situer des vecteurs\net/ou des rasters spécifiques.\nLes fonds de carte ont une résolution spatiale\net des informations plus ou moins détaillées.\n\nOL implémente directement plusieurs d'entre eux dans son API,\nainsi on dispose des sources de données tuilées suivantes :\nBingMaps (avec clé),\nStamen,\nCartoDB (avec clé)\net OpenStreetMap (OSM).",
+          "displayName": "FondCarteStamenTerrain",
+          "methods": [
+            {
+              "name": "updateMap",
+              "docblock": null,
+              "modifiers": [],
+              "params": [],
+              "returns": null
+            }
+          ],
+          "actualName": "FondCarteStamenTerrain"
+        }
+      ]
+    },
+    {
+      "key": "docs/FondCarteStamenToner.jsx",
+      "value": [
+        {
+          "description": "---------------------\nLes fonds de carte OL\n---------------------\n\nOn appelle communément fonds de carte,\nun ensemble de données géographiques compilées\nqui permettent de situer des vecteurs\net/ou des rasters spécifiques.\nLes fonds de carte ont une résolution spatiale\net des informations plus ou moins détaillées.\n\nOL implémente directement plusieurs d'entre eux dans son API,\nainsi on dispose des sources de données tuilées suivantes :\nBingMaps (avec clé),\nStamen,\nCartoDB (avec clé)\net OpenStreetMap (OSM).",
+          "displayName": "FondCarteStamenToner",
+          "methods": [
+            {
+              "name": "updateMap",
+              "docblock": null,
+              "modifiers": [],
+              "params": [],
+              "returns": null
+            }
+          ],
+          "actualName": "FondCarteStamenToner"
+        }
+      ]
+    },
+    {
+      "key": "docs/FondCarteStamenWatercolor.jsx",
+      "value": [
+        {
+          "description": "---------------------\nLes fonds de carte OL\n---------------------\n\nOn appelle communément fonds de carte,\nun ensemble de données géographiques compilées\nqui permettent de situer des vecteurs\net/ou des rasters spécifiques.\nLes fonds de carte ont une résolution spatiale\net des informations plus ou moins détaillées.\n\nOL implémente directement plusieurs d'entre eux dans son API,\nainsi on dispose des sources de données tuilées suivantes :\nBingMaps (avec clé),\nStamen,\nCartoDB (avec clé)\net OpenStreetMap (OSM).",
+          "displayName": "FondCarteStamenWatercolor",
+          "methods": [
+            {
+              "name": "updateMap",
+              "docblock": null,
+              "modifiers": [],
+              "params": [],
+              "returns": null
+            }
+          ],
+          "actualName": "FondCarteStamenWatercolor"
         }
       ]
     },
@@ -197,11 +254,11 @@
       ]
     },
     {
-      "key": "docs/FondCarteStamenTerrain.jsx",
+      "key": "docs/StylesGeometry.jsx",
       "value": [
         {
-          "description": "---------------------\nLes fonds de carte OL\n---------------------\n\nOn appelle communément fonds de carte,\nun ensemble de données géographiques compilées\nqui permettent de situer des vecteurs\net/ou des rasters spécifiques.\nLes fonds de carte ont une résolution spatiale\net des informations plus ou moins détaillées.\n\nOL implémente directement plusieurs d'entre eux dans son API,\nainsi on dispose des sources de données tuilées suivantes :\nBingMaps (avec clé),\nStamen,\nCartoDB (avec clé)\net OpenStreetMap (OSM).",
-          "displayName": "FondCarteStamenTerrain",
+          "description": "--------------------------------------------\n Les Styles pour les différentes géométries\n--------------------------------------------\nSi on considère les géométries basiques d'une entité géographique,\nc'est-à-dire un point, une ligne, un polygone ou un cercle,\nde quoi a-t-on besoin à minima pour les observer?\nun contour ol.style.Stroke  pour lequel on associe une couleur, un type de ligne et une épaisseur ;\nun remplissage ol.style.Fill  pour lequel on associe une couleur ;\net pour le cercle ol.style.Circle , une dimension de rayon radius.\nOn note que la classe ol.style.Circle ainsi que les classes ol.style.Icon et ol.style.\nRegularShape sont des sous-classes de ol.style.Image .\nLa couleur ol.color  est définie par des codes hexadécimaux ou le rgba.\nAinsi, par défaut, OL affecte le style suivant au données vectorielles :",
+          "displayName": "StylesGeometry",
           "methods": [
             {
               "name": "updateMap",
@@ -211,45 +268,7 @@
               "returns": null
             }
           ],
-          "actualName": "FondCarteStamenTerrain"
-        }
-      ]
-    },
-    {
-      "key": "docs/FondCarteStamenToner.jsx",
-      "value": [
-        {
-          "description": "---------------------\nLes fonds de carte OL\n---------------------\n\nOn appelle communément fonds de carte,\nun ensemble de données géographiques compilées\nqui permettent de situer des vecteurs\net/ou des rasters spécifiques.\nLes fonds de carte ont une résolution spatiale\net des informations plus ou moins détaillées.\n\nOL implémente directement plusieurs d'entre eux dans son API,\nainsi on dispose des sources de données tuilées suivantes :\nBingMaps (avec clé),\nStamen,\nCartoDB (avec clé)\net OpenStreetMap (OSM).",
-          "displayName": "FondCarteStamenToner",
-          "methods": [
-            {
-              "name": "updateMap",
-              "docblock": null,
-              "modifiers": [],
-              "params": [],
-              "returns": null
-            }
-          ],
-          "actualName": "FondCarteStamenToner"
-        }
-      ]
-    },
-    {
-      "key": "docs/FondCarteStamenWatercolor.jsx",
-      "value": [
-        {
-          "description": "---------------------\nLes fonds de carte OL\n---------------------\n\nOn appelle communément fonds de carte,\nun ensemble de données géographiques compilées\nqui permettent de situer des vecteurs\net/ou des rasters spécifiques.\nLes fonds de carte ont une résolution spatiale\net des informations plus ou moins détaillées.\n\nOL implémente directement plusieurs d'entre eux dans son API,\nainsi on dispose des sources de données tuilées suivantes :\nBingMaps (avec clé),\nStamen,\nCartoDB (avec clé)\net OpenStreetMap (OSM).",
-          "displayName": "FondCarteStamenWatercolor",
-          "methods": [
-            {
-              "name": "updateMap",
-              "docblock": null,
-              "modifiers": [],
-              "params": [],
-              "returns": null
-            }
-          ],
-          "actualName": "FondCarteStamenWatercolor"
+          "actualName": "StylesGeometry"
         }
       ]
     }
@@ -264,7 +283,7 @@
         "filepath": "docs/CarteWFS.mdx",
         "link": "https://github.com/gatsbyjs/gatsby-starter-default/edit/master/docs/CarteWFS.mdx",
         "slug": "docs-carte-wfs",
-        "route": "/docs/docs-carte-wfs",
+        "route": "/docs-carte-wfs",
         "headings": []
       }
     },
@@ -277,7 +296,7 @@
         "filepath": "docs/CarteWMS.mdx",
         "link": "https://github.com/gatsbyjs/gatsby-starter-default/edit/master/docs/CarteWMS.mdx",
         "slug": "docs-carte-wms",
-        "route": "/docs/docs-carte-wms",
+        "route": "/docs-carte-wms",
         "headings": []
       }
     },
@@ -290,7 +309,7 @@
         "filepath": "docs/Controles.mdx",
         "link": "https://github.com/gatsbyjs/gatsby-starter-default/edit/master/docs/Controles.mdx",
         "slug": "docs-controles",
-        "route": "/docs/docs-controles",
+        "route": "/docs-controles",
         "headings": []
       }
     },
@@ -303,7 +322,7 @@
         "filepath": "docs/Evenements.mdx",
         "link": "https://github.com/gatsbyjs/gatsby-starter-default/edit/master/docs/Evenements.mdx",
         "slug": "docs-evenements",
-        "route": "/docs/docs-evenements",
+        "route": "/docs-evenements",
         "headings": []
       }
     },
@@ -316,7 +335,7 @@
         "filepath": "docs/FondCarteStamenTerrain.mdx",
         "link": "https://github.com/gatsbyjs/gatsby-starter-default/edit/master/docs/FondCarteStamenTerrain.mdx",
         "slug": "docs-fond-carte-stamen-terrain",
-        "route": "/docs/docs-fond-carte-stamen-terrain",
+        "route": "/docs-fond-carte-stamen-terrain",
         "headings": []
       }
     },
@@ -329,7 +348,7 @@
         "filepath": "docs/FondCarteStamenToner.mdx",
         "link": "https://github.com/gatsbyjs/gatsby-starter-default/edit/master/docs/FondCarteStamenToner.mdx",
         "slug": "docs-fond-carte-stamen-toner",
-        "route": "/docs/docs-fond-carte-stamen-toner",
+        "route": "/docs-fond-carte-stamen-toner",
         "headings": []
       }
     },
@@ -342,7 +361,7 @@
         "filepath": "docs/FondCarteStamenWatercolor.mdx",
         "link": "https://github.com/gatsbyjs/gatsby-starter-default/edit/master/docs/FondCarteStamenWatercolor.mdx",
         "slug": "docs-fond-carte-stamen-watercolor",
-        "route": "/docs/docs-fond-carte-stamen-watercolor",
+        "route": "/docs-fond-carte-stamen-watercolor",
         "headings": []
       }
     },
@@ -355,7 +374,7 @@
         "filepath": "docs/MapView.mdx",
         "link": "https://github.com/gatsbyjs/gatsby-starter-default/edit/master/docs/MapView.mdx",
         "slug": "docs-map-view",
-        "route": "/docs/docs-map-view",
+        "route": "/docs-map-view",
         "headings": []
       }
     },
@@ -368,7 +387,7 @@
         "filepath": "docs/Projection.mdx",
         "link": "https://github.com/gatsbyjs/gatsby-starter-default/edit/master/docs/Projection.mdx",
         "slug": "docs-projection",
-        "route": "/docs/docs-projection",
+        "route": "/docs-projection",
         "headings": []
       }
     },
@@ -381,7 +400,20 @@
         "filepath": "docs/Projection2.mdx",
         "link": "https://github.com/gatsbyjs/gatsby-starter-default/edit/master/docs/Projection2.mdx",
         "slug": "docs-projection2",
-        "route": "/docs/docs-projection2",
+        "route": "/docs-projection2",
+        "headings": []
+      }
+    },
+    {
+      "key": "docs/StylesGeometry.mdx",
+      "value": {
+        "name": "Styles pour les différentes géométries",
+        "menu": "Les styles",
+        "id": "ceeb17a1a446acb593569dfab00976e6",
+        "filepath": "docs/StylesGeometry.mdx",
+        "link": "https://github.com/gatsbyjs/gatsby-starter-default/edit/master/docs/StylesGeometry.mdx",
+        "slug": "docs-styles-geometry",
+        "route": "/docs-styles-geometry",
         "headings": []
       }
     },
@@ -394,7 +426,7 @@
         "filepath": "docs/VecteurFichier.mdx",
         "link": "https://github.com/gatsbyjs/gatsby-starter-default/edit/master/docs/VecteurFichier.mdx",
         "slug": "docs-vecteur-fichier",
-        "route": "/docs/docs-vecteur-fichier",
+        "route": "/docs-vecteur-fichier",
         "headings": []
       }
     },
@@ -407,7 +439,7 @@
         "filepath": "docs/VecteurGeometry.mdx",
         "link": "https://github.com/gatsbyjs/gatsby-starter-default/edit/master/docs/VecteurGeometry.mdx",
         "slug": "docs-vecteur-geometry",
-        "route": "/docs/docs-vecteur-geometry",
+        "route": "/docs-vecteur-geometry",
         "headings": []
       }
     },
@@ -415,7 +447,7 @@
       "key": "docs/index.mdx",
       "value": {
         "name": "Introduction",
-        "route": "/docs/",
+        "route": "/",
         "id": "73498ad0e1e62a714b08085d318f9de1",
         "filepath": "docs/index.mdx",
         "link": "https://github.com/gatsbyjs/gatsby-starter-default/edit/master/docs/index.mdx",
