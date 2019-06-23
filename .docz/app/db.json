@@ -271,6 +271,25 @@
           "actualName": "StylesGeometry"
         }
       ]
+    },
+    {
+      "key": "docs/IconsLabels.jsx",
+      "value": [
+        {
+          "description": "--------------------------------------------\n Les Icons et les Labels\n--------------------------------------------\nIl est possible d'associer des icons et des labels aux vecteurs.\nPour afficher un icon, la classe ol.style.Icon  est caractérisée par de\nnombreuses options liées notamment à la source, l'ancrage et au style de l'image.",
+          "displayName": "IconsLabels",
+          "methods": [
+            {
+              "name": "updateMap",
+              "docblock": null,
+              "modifiers": [],
+              "params": [],
+              "returns": null
+            }
+          ],
+          "actualName": "IconsLabels"
+        }
+      ]
     }
   ],
   "entries": [
@@ -362,6 +381,19 @@
         "link": "https://github.com/gatsbyjs/gatsby-starter-default/edit/master/docs/FondCarteStamenWatercolor.mdx",
         "slug": "docs-fond-carte-stamen-watercolor",
         "route": "/docs-fond-carte-stamen-watercolor",
+        "headings": []
+      }
+    },
+    {
+      "key": "docs/IconsLabels.mdx",
+      "value": {
+        "name": "Icons et les Labels",
+        "menu": "Les styles",
+        "id": "d3eb6798da1f081ee5e18dfa1fbd5e67",
+        "filepath": "docs/IconsLabels.mdx",
+        "link": "https://github.com/gatsbyjs/gatsby-starter-default/edit/master/docs/IconsLabels.mdx",
+        "slug": "docs-icons-labels",
+        "route": "/docs-icons-labels",
         "headings": []
       }
     },

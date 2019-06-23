@@ -27,6 +27,10 @@ export const imports = {
     import(
       /* webpackPrefetch: true, webpackChunkName: "docs-fond-carte-stamen-watercolor" */ 'docs/FondCarteStamenWatercolor.mdx'
     ),
+  'docs/IconsLabels.mdx': () =>
+    import(
+      /* webpackPrefetch: true, webpackChunkName: "docs-icons-labels" */ 'docs/IconsLabels.mdx'
+    ),
   'docs/MapView.mdx': () =>
     import(
       /* webpackPrefetch: true, webpackChunkName: "docs-map-view" */ 'docs/MapView.mdx'
