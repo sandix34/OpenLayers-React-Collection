@@ -45,25 +45,6 @@
       ]
     },
     {
-      "key": "docs/Controles.jsx",
-      "value": [
-        {
-          "description": "--------------\nLes contrôles\n--------------\n\nLes contrôles ol.control  sont d'autres composantes de la classe Map.\nChaque méthode possède ses propres options.\nIl est possible de modifier le style CSS ou d'ajouter certaines fonctions javascript\nOpenLayers montre par exemple comment modifier le style CSS (couleur, place des éléments, etc) du ZoomSlider\nhttps://openlayers.org/en/latest/examples/zoomslider.html",
-          "displayName": "Controles",
-          "methods": [
-            {
-              "name": "updateMap",
-              "docblock": null,
-              "modifiers": [],
-              "params": [],
-              "returns": null
-            }
-          ],
-          "actualName": "Controles"
-        }
-      ]
-    },
-    {
       "key": "docs/CarteWMS.jsx",
       "value": [
         {
@@ -79,6 +60,44 @@
             }
           ],
           "actualName": "CarteWMS"
+        }
+      ]
+    },
+    {
+      "key": "docs/Clusters.jsx",
+      "value": [
+        {
+          "description": "--------------------------------------------\n LES CLUSTERS\n--------------------------------------------\nLes clusters permettent de regrouper et de montrer le nombre\nd'entités géographiques d'un vecteur en focntion d'un niveau de zoom sur la carte.",
+          "displayName": "Clusters",
+          "methods": [
+            {
+              "name": "updateMap",
+              "docblock": null,
+              "modifiers": [],
+              "params": [],
+              "returns": null
+            }
+          ],
+          "actualName": "Clusters"
+        }
+      ]
+    },
+    {
+      "key": "docs/Controles.jsx",
+      "value": [
+        {
+          "description": "--------------\nLes contrôles\n--------------\n\nLes contrôles ol.control  sont d'autres composantes de la classe Map.\nChaque méthode possède ses propres options.\nIl est possible de modifier le style CSS ou d'ajouter certaines fonctions javascript\nOpenLayers montre par exemple comment modifier le style CSS (couleur, place des éléments, etc) du ZoomSlider\nhttps://openlayers.org/en/latest/examples/zoomslider.html",
+          "displayName": "Controles",
+          "methods": [
+            {
+              "name": "updateMap",
+              "docblock": null,
+              "modifiers": [],
+              "params": [],
+              "returns": null
+            }
+          ],
+          "actualName": "Controles"
         }
       ]
     },
@@ -159,6 +178,25 @@
       ]
     },
     {
+      "key": "docs/IconsLabels.jsx",
+      "value": [
+        {
+          "description": "--------------------------------------------\n Les Icons et les Labels\n--------------------------------------------\nIl est possible d'associer des icons et des labels aux vecteurs.\nPour afficher un icon, la classe ol.style.Icon  est caractérisée par de\nnombreuses options liées notamment à la source, l'ancrage et au style de l'image.",
+          "displayName": "IconsLabels",
+          "methods": [
+            {
+              "name": "updateMap",
+              "docblock": null,
+              "modifiers": [],
+              "params": [],
+              "returns": null
+            }
+          ],
+          "actualName": "IconsLabels"
+        }
+      ]
+    },
+    {
       "key": "docs/MapView.jsx",
       "value": [
         {
@@ -174,6 +212,17 @@
             }
           ],
           "actualName": "MapView"
+        }
+      ]
+    },
+    {
+      "key": "docs/Overlays.jsx",
+      "value": [
+        {
+          "description": "------------------------\nLes Overlays\n------------------------\nLes overlays sont des éléments localisés géographiquement comme des images par exemple.\nDe la même manière que les contrôles,\nils ont ajoutés à l'objet de la classe Map mais ils ne sont pas statiques.\nAinsi, la classe ol.Overlay , en plus de l'indication de son élément dans le conteneur\net de sa position, possède des options liées au panoramique de la carte.",
+          "displayName": "Overlays",
+          "methods": [],
+          "actualName": "Overlays"
         }
       ]
     },
@@ -216,6 +265,25 @@
       ]
     },
     {
+      "key": "docs/StylesGeometry.jsx",
+      "value": [
+        {
+          "description": "--------------------------------------------\n Les Styles pour les différentes géométries\n--------------------------------------------\nSi on considère les géométries basiques d'une entité géographique,\nc'est-à-dire un point, une ligne, un polygone ou un cercle,\nde quoi a-t-on besoin à minima pour les observer?\nun contour ol.style.Stroke  pour lequel on associe une couleur, un type de ligne et une épaisseur ;\nun remplissage ol.style.Fill  pour lequel on associe une couleur ;\net pour le cercle ol.style.Circle , une dimension de rayon radius.\nOn note que la classe ol.style.Circle ainsi que les classes ol.style.Icon et ol.style.\nRegularShape sont des sous-classes de ol.style.Image .\nLa couleur ol.color  est définie par des codes hexadécimaux ou le rgba.\nAinsi, par défaut, OL affecte le style suivant au données vectorielles :",
+          "displayName": "StylesGeometry",
+          "methods": [
+            {
+              "name": "updateMap",
+              "docblock": null,
+              "modifiers": [],
+              "params": [],
+              "returns": null
+            }
+          ],
+          "actualName": "StylesGeometry"
+        }
+      ]
+    },
+    {
       "key": "docs/VecteurFichier.jsx",
       "value": [
         {
@@ -250,63 +318,6 @@
             }
           ],
           "actualName": "VecteurGeometry"
-        }
-      ]
-    },
-    {
-      "key": "docs/StylesGeometry.jsx",
-      "value": [
-        {
-          "description": "--------------------------------------------\n Les Styles pour les différentes géométries\n--------------------------------------------\nSi on considère les géométries basiques d'une entité géographique,\nc'est-à-dire un point, une ligne, un polygone ou un cercle,\nde quoi a-t-on besoin à minima pour les observer?\nun contour ol.style.Stroke  pour lequel on associe une couleur, un type de ligne et une épaisseur ;\nun remplissage ol.style.Fill  pour lequel on associe une couleur ;\net pour le cercle ol.style.Circle , une dimension de rayon radius.\nOn note que la classe ol.style.Circle ainsi que les classes ol.style.Icon et ol.style.\nRegularShape sont des sous-classes de ol.style.Image .\nLa couleur ol.color  est définie par des codes hexadécimaux ou le rgba.\nAinsi, par défaut, OL affecte le style suivant au données vectorielles :",
-          "displayName": "StylesGeometry",
-          "methods": [
-            {
-              "name": "updateMap",
-              "docblock": null,
-              "modifiers": [],
-              "params": [],
-              "returns": null
-            }
-          ],
-          "actualName": "StylesGeometry"
-        }
-      ]
-    },
-    {
-      "key": "docs/IconsLabels.jsx",
-      "value": [
-        {
-          "description": "--------------------------------------------\n Les Icons et les Labels\n--------------------------------------------\nIl est possible d'associer des icons et des labels aux vecteurs.\nPour afficher un icon, la classe ol.style.Icon  est caractérisée par de\nnombreuses options liées notamment à la source, l'ancrage et au style de l'image.",
-          "displayName": "IconsLabels",
-          "methods": [
-            {
-              "name": "updateMap",
-              "docblock": null,
-              "modifiers": [],
-              "params": [],
-              "returns": null
-            }
-          ],
-          "actualName": "IconsLabels"
-        }
-      ]
-    },
-    {
-      "key": "docs/Clusters.jsx",
-      "value": [
-        {
-          "description": "--------------------------------------------\n LES CLUSTERS\n--------------------------------------------\nLes clusters permettent de regrouper et de montrer le nombre\nd'entités géographiques d'un vecteur en focntion d'un niveau de zoom sur la carte.",
-          "displayName": "Clusters",
-          "methods": [
-            {
-              "name": "updateMap",
-              "docblock": null,
-              "modifiers": [],
-              "params": [],
-              "returns": null
-            }
-          ],
-          "actualName": "Clusters"
         }
       ]
     }
@@ -439,6 +450,19 @@
         "link": "https://github.com/gatsbyjs/gatsby-starter-default/edit/master/docs/MapView.mdx",
         "slug": "docs-map-view",
         "route": "/docs-map-view",
+        "headings": []
+      }
+    },
+    {
+      "key": "docs/Overlays.mdx",
+      "value": {
+        "name": "Les overlays",
+        "menu": "Les groupes de couches, clusters et overlays",
+        "id": "53b8660fd9a9989c553911f6f8b7ff3f",
+        "filepath": "docs/Overlays.mdx",
+        "link": "https://github.com/gatsbyjs/gatsby-starter-default/edit/master/docs/Overlays.mdx",
+        "slug": "docs-overlays",
+        "route": "/docs-overlays",
         "headings": []
       }
     },
