@@ -51,6 +51,10 @@ export const imports = {
     import(
       /* webpackPrefetch: true, webpackChunkName: "docs-projection2" */ 'docs/Projection2.mdx'
     ),
+  'docs/Selection.mdx': () =>
+    import(
+      /* webpackPrefetch: true, webpackChunkName: "docs-selection" */ 'docs/Selection.mdx'
+    ),
   'docs/StylesGeometry.mdx': () =>
     import(
       /* webpackPrefetch: true, webpackChunkName: "docs-styles-geometry" */ 'docs/StylesGeometry.mdx'
