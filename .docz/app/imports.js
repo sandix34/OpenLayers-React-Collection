@@ -67,6 +67,10 @@ export const imports = {
     import(
       /* webpackPrefetch: true, webpackChunkName: "docs-styles-geometry" */ 'docs/StylesGeometry.mdx'
     ),
+  'docs/Translation.mdx': () =>
+    import(
+      /* webpackPrefetch: true, webpackChunkName: "docs-translation" */ 'docs/Translation.mdx'
+    ),
   'docs/VecteurFichier.mdx': () =>
     import(
       /* webpackPrefetch: true, webpackChunkName: "docs-vecteur-fichier" */ 'docs/VecteurFichier.mdx'

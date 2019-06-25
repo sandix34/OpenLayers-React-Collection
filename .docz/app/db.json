@@ -361,6 +361,17 @@
           "actualName": "Modification"
         }
       ]
+    },
+    {
+      "key": "docs/Translation.jsx",
+      "value": [
+        {
+          "description": "--------------\nLa translation\n--------------\nLa classe ol.interaction.Translate permet de déplacer des entités géographiques du vecteur.\nComme les autres interactions, il est possible de spécifier des options\ncomme les conditions de sélection (au clic par exemple),\nles filtres de sélection des couches\net la récupération des objets et le style des entités selectionnées.\nIci, on spécifie la couche prise en compte dans la translation.",
+          "displayName": "Translation",
+          "methods": [],
+          "actualName": "Translation"
+        }
+      ]
     }
   ],
   "entries": [
@@ -582,6 +593,19 @@
         "link": "https://github.com/gatsbyjs/gatsby-starter-default/edit/master/docs/StylesGeometry.mdx",
         "slug": "docs-styles-geometry",
         "route": "/docs-styles-geometry",
+        "headings": []
+      }
+    },
+    {
+      "key": "docs/Translation.mdx",
+      "value": {
+        "name": "La translation",
+        "menu": "Les interractions",
+        "id": "d079a46ea5f5c29401e7a077d77243f6",
+        "filepath": "docs/Translation.mdx",
+        "link": "https://github.com/gatsbyjs/gatsby-starter-default/edit/master/docs/Translation.mdx",
+        "slug": "docs-translation",
+        "route": "/docs-translation",
         "headings": []
       }
     },
