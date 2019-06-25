@@ -102,6 +102,17 @@
       ]
     },
     {
+      "key": "docs/Dessin.jsx",
+      "value": [
+        {
+          "description": "--------------\nLe dessin\n--------------\n Créer de nouvelles entités géographiques avec OL est rendu possible\ngrâce à la classe ol.interaction.Draw.\nQui dit création d'une entité dit forcément réception de cette donnée\ndans une source vectorielle. Ainsi, il est indispensable de préciser\nla source de donnée à l'objet de l'interaction ainsi que la géométrie dessinée.\nLe script suivant permet de créer des points et on ajoute un style spécifique à\nl'interaction qui est différente de celui du vecteur.",
+          "displayName": "Dessin",
+          "methods": [],
+          "actualName": "Dessin"
+        }
+      ]
+    },
+    {
       "key": "docs/Evenements.jsx",
       "value": [
         {
@@ -391,6 +402,19 @@
         "link": "https://github.com/gatsbyjs/gatsby-starter-default/edit/master/docs/Controles.mdx",
         "slug": "docs-controles",
         "route": "/docs-controles",
+        "headings": []
+      }
+    },
+    {
+      "key": "docs/Dessin.mdx",
+      "value": {
+        "name": "Le Dessin",
+        "menu": "Les interractions",
+        "id": "b0fd5fbf089644bfe1a38d2810e676a7",
+        "filepath": "docs/Dessin.mdx",
+        "link": "https://github.com/gatsbyjs/gatsby-starter-default/edit/master/docs/Dessin.mdx",
+        "slug": "docs-dessin",
+        "route": "/docs-dessin",
         "headings": []
       }
     },

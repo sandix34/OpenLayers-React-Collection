@@ -15,6 +15,10 @@ export const imports = {
     import(
       /* webpackPrefetch: true, webpackChunkName: "docs-controles" */ 'docs/Controles.mdx'
     ),
+  'docs/Dessin.mdx': () =>
+    import(
+      /* webpackPrefetch: true, webpackChunkName: "docs-dessin" */ 'docs/Dessin.mdx'
+    ),
   'docs/Evenements.mdx': () =>
     import(
       /* webpackPrefetch: true, webpackChunkName: "docs-evenements" */ 'docs/Evenements.mdx'
