@@ -350,6 +350,17 @@
           "actualName": "VecteurGeometry"
         }
       ]
+    },
+    {
+      "key": "docs/Modification.jsx",
+      "value": [
+        {
+          "description": "--------------\nLa modification\n--------------\nDe même que pour les interactions précédentes,\nla modification de données vectorielles est réalisée en ajoutant\nl'interaction ol.interaction.Modify à l'objet Map.\nOn indique la source du vecteur à modifier dans l'objet de l'interaction\net d'autres options sont possibles tels le style\net les conditions de modifications des sommets.\nLe code suivant montre la mise en place d'une modification simple.",
+          "displayName": "Modification",
+          "methods": [],
+          "actualName": "Modification"
+        }
+      ]
     }
   ],
   "entries": [
@@ -493,6 +504,19 @@
         "link": "https://github.com/gatsbyjs/gatsby-starter-default/edit/master/docs/MapView.mdx",
         "slug": "docs-map-view",
         "route": "/docs-map-view",
+        "headings": []
+      }
+    },
+    {
+      "key": "docs/Modification.mdx",
+      "value": {
+        "name": "La modification",
+        "menu": "Les interractions",
+        "id": "422bb3dcf7b377725c4baafb77f7ddf4",
+        "filepath": "docs/Modification.mdx",
+        "link": "https://github.com/gatsbyjs/gatsby-starter-default/edit/master/docs/Modification.mdx",
+        "slug": "docs-modification",
+        "route": "/docs-modification",
         "headings": []
       }
     },

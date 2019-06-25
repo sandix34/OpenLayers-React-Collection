@@ -43,6 +43,10 @@ export const imports = {
     import(
       /* webpackPrefetch: true, webpackChunkName: "docs-map-view" */ 'docs/MapView.mdx'
     ),
+  'docs/Modification.mdx': () =>
+    import(
+      /* webpackPrefetch: true, webpackChunkName: "docs-modification" */ 'docs/Modification.mdx'
+    ),
   'docs/Overlays.mdx': () =>
     import(
       /* webpackPrefetch: true, webpackChunkName: "docs-overlays" */ 'docs/Overlays.mdx'
