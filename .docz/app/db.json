@@ -83,6 +83,17 @@
       ]
     },
     {
+      "key": "docs/Dessin.jsx",
+      "value": [
+        {
+          "description": "--------------\nLe dessin\n--------------\n Créer de nouvelles entités géographiques avec OL est rendu possible\ngrâce à la classe ol.interaction.Draw.\nQui dit création d'une entité dit forcément réception de cette donnée\ndans une source vectorielle. Ainsi, il est indispensable de préciser\nla source de donnée à l'objet de l'interaction ainsi que la géométrie dessinée.\nLe script suivant permet de créer des points et on ajoute un style spécifique à\nl'interaction qui est différente de celui du vecteur.",
+          "displayName": "Dessin",
+          "methods": [],
+          "actualName": "Dessin"
+        }
+      ]
+    },
+    {
       "key": "docs/Controles.jsx",
       "value": [
         {
@@ -98,17 +109,6 @@
             }
           ],
           "actualName": "Controles"
-        }
-      ]
-    },
-    {
-      "key": "docs/Dessin.jsx",
-      "value": [
-        {
-          "description": "--------------\nLe dessin\n--------------\n Créer de nouvelles entités géographiques avec OL est rendu possible\ngrâce à la classe ol.interaction.Draw.\nQui dit création d'une entité dit forcément réception de cette donnée\ndans une source vectorielle. Ainsi, il est indispensable de préciser\nla source de donnée à l'objet de l'interaction ainsi que la géométrie dessinée.\nLe script suivant permet de créer des points et on ajoute un style spécifique à\nl'interaction qui est différente de celui du vecteur.",
-          "displayName": "Dessin",
-          "methods": [],
-          "actualName": "Dessin"
         }
       ]
     },
@@ -227,6 +227,17 @@
       ]
     },
     {
+      "key": "docs/Modification.jsx",
+      "value": [
+        {
+          "description": "--------------\nLa modification\n--------------\nDe même que pour les interactions précédentes,\nla modification de données vectorielles est réalisée en ajoutant\nl'interaction ol.interaction.Modify à l'objet Map.\nOn indique la source du vecteur à modifier dans l'objet de l'interaction\net d'autres options sont possibles tels le style\net les conditions de modifications des sommets.\nLe code suivant montre la mise en place d'une modification simple.",
+          "displayName": "Modification",
+          "methods": [],
+          "actualName": "Modification"
+        }
+      ]
+    },
+    {
       "key": "docs/Overlays.jsx",
       "value": [
         {
@@ -314,6 +325,17 @@
       ]
     },
     {
+      "key": "docs/Translation.jsx",
+      "value": [
+        {
+          "description": "--------------\nLa translation\n--------------\nLa classe ol.interaction.Translate permet de déplacer des entités géographiques du vecteur.\nComme les autres interactions, il est possible de spécifier des options\ncomme les conditions de sélection (au clic par exemple),\nles filtres de sélection des couches\net la récupération des objets et le style des entités selectionnées.\nIci, on spécifie la couche prise en compte dans la translation.",
+          "displayName": "Translation",
+          "methods": [],
+          "actualName": "Translation"
+        }
+      ]
+    },
+    {
       "key": "docs/VecteurFichier.jsx",
       "value": [
         {
@@ -352,24 +374,68 @@
       ]
     },
     {
-      "key": "docs/Modification.jsx",
+      "key": "src/components/background.js",
       "value": [
         {
-          "description": "--------------\nLa modification\n--------------\nDe même que pour les interactions précédentes,\nla modification de données vectorielles est réalisée en ajoutant\nl'interaction ol.interaction.Modify à l'objet Map.\nOn indique la source du vecteur à modifier dans l'objet de l'interaction\net d'autres options sont possibles tels le style\net les conditions de modifications des sommets.\nLe code suivant montre la mise en place d'une modification simple.",
-          "displayName": "Modification",
+          "description": "",
+          "displayName": "Background",
           "methods": [],
-          "actualName": "Modification"
+          "actualName": "Background"
         }
       ]
     },
     {
-      "key": "docs/Translation.jsx",
+      "key": "src/pages/index.js",
       "value": [
         {
-          "description": "--------------\nLa translation\n--------------\nLa classe ol.interaction.Translate permet de déplacer des entités géographiques du vecteur.\nComme les autres interactions, il est possible de spécifier des options\ncomme les conditions de sélection (au clic par exemple),\nles filtres de sélection des couches\net la récupération des objets et le style des entités selectionnées.\nIci, on spécifie la couche prise en compte dans la translation.",
-          "displayName": "Translation",
+          "description": "",
+          "displayName": "IndexPage",
           "methods": [],
-          "actualName": "Translation"
+          "actualName": "IndexPage"
+        }
+      ]
+    },
+    {
+      "key": "src/components/layout.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Layout",
+          "methods": [],
+          "actualName": "Layout",
+          "props": {
+            "children": {
+              "type": {
+                "name": "node"
+              },
+              "required": true,
+              "description": ""
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "src/components/header.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Header",
+          "methods": [],
+          "actualName": "Header",
+          "props": {
+            "siteTitle": {
+              "type": {
+                "name": "string"
+              },
+              "required": false,
+              "description": "",
+              "defaultValue": {
+                "value": "``",
+                "computed": false
+              }
+            }
+          }
         }
       ]
     }
@@ -384,7 +450,7 @@
         "filepath": "docs/CarteWFS.mdx",
         "link": "https://github.com/gatsbyjs/gatsby-starter-default/edit/master/docs/CarteWFS.mdx",
         "slug": "docs-carte-wfs",
-        "route": "/docs-carte-wfs",
+        "route": "/docs/docs-carte-wfs",
         "headings": []
       }
     },
@@ -397,7 +463,7 @@
         "filepath": "docs/CarteWMS.mdx",
         "link": "https://github.com/gatsbyjs/gatsby-starter-default/edit/master/docs/CarteWMS.mdx",
         "slug": "docs-carte-wms",
-        "route": "/docs-carte-wms",
+        "route": "/docs/docs-carte-wms",
         "headings": []
       }
     },
@@ -410,7 +476,7 @@
         "filepath": "docs/Clusters.mdx",
         "link": "https://github.com/gatsbyjs/gatsby-starter-default/edit/master/docs/Clusters.mdx",
         "slug": "docs-clusters",
-        "route": "/docs-clusters",
+        "route": "/docs/docs-clusters",
         "headings": []
       }
     },
@@ -423,7 +489,7 @@
         "filepath": "docs/Controles.mdx",
         "link": "https://github.com/gatsbyjs/gatsby-starter-default/edit/master/docs/Controles.mdx",
         "slug": "docs-controles",
-        "route": "/docs-controles",
+        "route": "/docs/docs-controles",
         "headings": []
       }
     },
@@ -436,7 +502,7 @@
         "filepath": "docs/Dessin.mdx",
         "link": "https://github.com/gatsbyjs/gatsby-starter-default/edit/master/docs/Dessin.mdx",
         "slug": "docs-dessin",
-        "route": "/docs-dessin",
+        "route": "/docs/docs-dessin",
         "headings": []
       }
     },
@@ -449,7 +515,7 @@
         "filepath": "docs/Evenements.mdx",
         "link": "https://github.com/gatsbyjs/gatsby-starter-default/edit/master/docs/Evenements.mdx",
         "slug": "docs-evenements",
-        "route": "/docs-evenements",
+        "route": "/docs/docs-evenements",
         "headings": []
       }
     },
@@ -462,7 +528,7 @@
         "filepath": "docs/FondCarteStamenTerrain.mdx",
         "link": "https://github.com/gatsbyjs/gatsby-starter-default/edit/master/docs/FondCarteStamenTerrain.mdx",
         "slug": "docs-fond-carte-stamen-terrain",
-        "route": "/docs-fond-carte-stamen-terrain",
+        "route": "/docs/docs-fond-carte-stamen-terrain",
         "headings": []
       }
     },
@@ -475,7 +541,7 @@
         "filepath": "docs/FondCarteStamenToner.mdx",
         "link": "https://github.com/gatsbyjs/gatsby-starter-default/edit/master/docs/FondCarteStamenToner.mdx",
         "slug": "docs-fond-carte-stamen-toner",
-        "route": "/docs-fond-carte-stamen-toner",
+        "route": "/docs/docs-fond-carte-stamen-toner",
         "headings": []
       }
     },
@@ -488,7 +554,7 @@
         "filepath": "docs/FondCarteStamenWatercolor.mdx",
         "link": "https://github.com/gatsbyjs/gatsby-starter-default/edit/master/docs/FondCarteStamenWatercolor.mdx",
         "slug": "docs-fond-carte-stamen-watercolor",
-        "route": "/docs-fond-carte-stamen-watercolor",
+        "route": "/docs/docs-fond-carte-stamen-watercolor",
         "headings": []
       }
     },
@@ -501,7 +567,7 @@
         "filepath": "docs/IconsLabels.mdx",
         "link": "https://github.com/gatsbyjs/gatsby-starter-default/edit/master/docs/IconsLabels.mdx",
         "slug": "docs-icons-labels",
-        "route": "/docs-icons-labels",
+        "route": "/docs/docs-icons-labels",
         "headings": []
       }
     },
@@ -514,7 +580,7 @@
         "filepath": "docs/MapView.mdx",
         "link": "https://github.com/gatsbyjs/gatsby-starter-default/edit/master/docs/MapView.mdx",
         "slug": "docs-map-view",
-        "route": "/docs-map-view",
+        "route": "/docs/docs-map-view",
         "headings": []
       }
     },
@@ -527,7 +593,7 @@
         "filepath": "docs/Modification.mdx",
         "link": "https://github.com/gatsbyjs/gatsby-starter-default/edit/master/docs/Modification.mdx",
         "slug": "docs-modification",
-        "route": "/docs-modification",
+        "route": "/docs/docs-modification",
         "headings": []
       }
     },
@@ -540,7 +606,7 @@
         "filepath": "docs/Overlays.mdx",
         "link": "https://github.com/gatsbyjs/gatsby-starter-default/edit/master/docs/Overlays.mdx",
         "slug": "docs-overlays",
-        "route": "/docs-overlays",
+        "route": "/docs/docs-overlays",
         "headings": []
       }
     },
@@ -553,7 +619,7 @@
         "filepath": "docs/Projection.mdx",
         "link": "https://github.com/gatsbyjs/gatsby-starter-default/edit/master/docs/Projection.mdx",
         "slug": "docs-projection",
-        "route": "/docs-projection",
+        "route": "/docs/docs-projection",
         "headings": []
       }
     },
@@ -566,7 +632,7 @@
         "filepath": "docs/Projection2.mdx",
         "link": "https://github.com/gatsbyjs/gatsby-starter-default/edit/master/docs/Projection2.mdx",
         "slug": "docs-projection2",
-        "route": "/docs-projection2",
+        "route": "/docs/docs-projection2",
         "headings": []
       }
     },
@@ -579,7 +645,7 @@
         "filepath": "docs/Selection.mdx",
         "link": "https://github.com/gatsbyjs/gatsby-starter-default/edit/master/docs/Selection.mdx",
         "slug": "docs-selection",
-        "route": "/docs-selection",
+        "route": "/docs/docs-selection",
         "headings": []
       }
     },
@@ -592,7 +658,7 @@
         "filepath": "docs/StylesGeometry.mdx",
         "link": "https://github.com/gatsbyjs/gatsby-starter-default/edit/master/docs/StylesGeometry.mdx",
         "slug": "docs-styles-geometry",
-        "route": "/docs-styles-geometry",
+        "route": "/docs/docs-styles-geometry",
         "headings": []
       }
     },
@@ -605,7 +671,7 @@
         "filepath": "docs/Translation.mdx",
         "link": "https://github.com/gatsbyjs/gatsby-starter-default/edit/master/docs/Translation.mdx",
         "slug": "docs-translation",
-        "route": "/docs-translation",
+        "route": "/docs/docs-translation",
         "headings": []
       }
     },
@@ -618,7 +684,7 @@
         "filepath": "docs/VecteurFichier.mdx",
         "link": "https://github.com/gatsbyjs/gatsby-starter-default/edit/master/docs/VecteurFichier.mdx",
         "slug": "docs-vecteur-fichier",
-        "route": "/docs-vecteur-fichier",
+        "route": "/docs/docs-vecteur-fichier",
         "headings": []
       }
     },
@@ -631,7 +697,7 @@
         "filepath": "docs/VecteurGeometry.mdx",
         "link": "https://github.com/gatsbyjs/gatsby-starter-default/edit/master/docs/VecteurGeometry.mdx",
         "slug": "docs-vecteur-geometry",
-        "route": "/docs-vecteur-geometry",
+        "route": "/docs/docs-vecteur-geometry",
         "headings": []
       }
     },
@@ -639,7 +705,7 @@
       "key": "docs/index.mdx",
       "value": {
         "name": "Introduction",
-        "route": "/",
+        "route": "/docs/docs",
         "id": "73498ad0e1e62a714b08085d318f9de1",
         "filepath": "docs/index.mdx",
         "link": "https://github.com/gatsbyjs/gatsby-starter-default/edit/master/docs/index.mdx",
