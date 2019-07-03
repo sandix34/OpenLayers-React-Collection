@@ -10,8 +10,18 @@ export default {
         'Les groupes de couches, clusters et overlays',
         'Les interractions'
     ],
-    repository: false,
     themeConfig: {
       linesToScrollEditor: 70,
+      colors: {
+        primary: '#53c4d5',
+        sidebarBg: '#174c53',
+        sidebarText: '#EEF1F5',
+      },
+      styles: {
+        h1: `
+          font-size: 80px;
+          margin-bottom: 10px;
+        `,
+      },
     },
   }

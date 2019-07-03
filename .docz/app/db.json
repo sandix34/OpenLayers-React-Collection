@@ -1,7 +1,7 @@
 {
   "config": {
     "title": "Exemples de code OpenLayers / React",
-    "description": "A simple starter to get up and developing quickly with Gatsby",
+    "description": "Une collection d'exemple de code OpenLayers basée sur React présentée dans Gatsby-Docz",
     "menu": [
       "Introduction",
       "La classe Map",
@@ -11,11 +11,19 @@
       "Les interractions"
     ],
     "version": "0.1.0",
-    "repository": false,
+    "repository": "https://github.com/sandix34/OpenLayers-React-Collection",
     "native": false,
     "codeSandbox": true,
     "themeConfig": {
-      "linesToScrollEditor": 70
+      "linesToScrollEditor": 70,
+      "colors": {
+        "primary": "#53c4d5",
+        "sidebarBg": "#174c53",
+        "sidebarText": "#EEF1F5"
+      },
+      "styles": {
+        "h1": "\n          font-size: 80px;\n          margin-bottom: 10px;\n        "
+      }
     },
     "separator": "-",
     "base": "/",
@@ -83,17 +91,6 @@
       ]
     },
     {
-      "key": "docs/Dessin.jsx",
-      "value": [
-        {
-          "description": "--------------\nLe dessin\n--------------\n Créer de nouvelles entités géographiques avec OL est rendu possible\ngrâce à la classe ol.interaction.Draw.\nQui dit création d'une entité dit forcément réception de cette donnée\ndans une source vectorielle. Ainsi, il est indispensable de préciser\nla source de donnée à l'objet de l'interaction ainsi que la géométrie dessinée.\nLe script suivant permet de créer des points et on ajoute un style spécifique à\nl'interaction qui est différente de celui du vecteur.",
-          "displayName": "Dessin",
-          "methods": [],
-          "actualName": "Dessin"
-        }
-      ]
-    },
-    {
       "key": "docs/Controles.jsx",
       "value": [
         {
@@ -109,6 +106,17 @@
             }
           ],
           "actualName": "Controles"
+        }
+      ]
+    },
+    {
+      "key": "docs/Dessin.jsx",
+      "value": [
+        {
+          "description": "--------------\nLe dessin\n--------------\n Créer de nouvelles entités géographiques avec OL est rendu possible\ngrâce à la classe ol.interaction.Draw.\nQui dit création d'une entité dit forcément réception de cette donnée\ndans une source vectorielle. Ainsi, il est indispensable de préciser\nla source de donnée à l'objet de l'interaction ainsi que la géométrie dessinée.\nLe script suivant permet de créer des points et on ajoute un style spécifique à\nl'interaction qui est différente de celui du vecteur.",
+          "displayName": "Dessin",
+          "methods": [],
+          "actualName": "Dessin"
         }
       ]
     },
@@ -372,72 +380,6 @@
           "actualName": "VecteurGeometry"
         }
       ]
-    },
-    {
-      "key": "src/components/background.js",
-      "value": [
-        {
-          "description": "",
-          "displayName": "Background",
-          "methods": [],
-          "actualName": "Background"
-        }
-      ]
-    },
-    {
-      "key": "src/pages/index.js",
-      "value": [
-        {
-          "description": "",
-          "displayName": "IndexPage",
-          "methods": [],
-          "actualName": "IndexPage"
-        }
-      ]
-    },
-    {
-      "key": "src/components/layout.js",
-      "value": [
-        {
-          "description": "",
-          "displayName": "Layout",
-          "methods": [],
-          "actualName": "Layout",
-          "props": {
-            "children": {
-              "type": {
-                "name": "node"
-              },
-              "required": true,
-              "description": ""
-            }
-          }
-        }
-      ]
-    },
-    {
-      "key": "src/components/header.js",
-      "value": [
-        {
-          "description": "",
-          "displayName": "Header",
-          "methods": [],
-          "actualName": "Header",
-          "props": {
-            "siteTitle": {
-              "type": {
-                "name": "string"
-              },
-              "required": false,
-              "description": "",
-              "defaultValue": {
-                "value": "``",
-                "computed": false
-              }
-            }
-          }
-        }
-      ]
     }
   ],
   "entries": [
@@ -448,9 +390,9 @@
         "menu": "Les couches SIG",
         "id": "44b63ddbd14d3e3d6b56e5bb93c90600",
         "filepath": "docs/CarteWFS.mdx",
-        "link": "https://github.com/gatsbyjs/gatsby-starter-default/edit/master/docs/CarteWFS.mdx",
+        "link": "https://github.com/sandix34/OpenLayers-React-Collection/edit/master/docs/CarteWFS.mdx",
         "slug": "docs-carte-wfs",
-        "route": "/docs/docs-carte-wfs",
+        "route": "/docs-carte-wfs",
         "headings": []
       }
     },
@@ -461,9 +403,9 @@
         "menu": "Les couches SIG",
         "id": "3893092952017edc2afb3a537c2ba0a5",
         "filepath": "docs/CarteWMS.mdx",
-        "link": "https://github.com/gatsbyjs/gatsby-starter-default/edit/master/docs/CarteWMS.mdx",
+        "link": "https://github.com/sandix34/OpenLayers-React-Collection/edit/master/docs/CarteWMS.mdx",
         "slug": "docs-carte-wms",
-        "route": "/docs/docs-carte-wms",
+        "route": "/docs-carte-wms",
         "headings": []
       }
     },
@@ -474,9 +416,9 @@
         "menu": "Les groupes de couches, clusters et overlays",
         "id": "47ae5ec3c073241850fe9518b9342e04",
         "filepath": "docs/Clusters.mdx",
-        "link": "https://github.com/gatsbyjs/gatsby-starter-default/edit/master/docs/Clusters.mdx",
+        "link": "https://github.com/sandix34/OpenLayers-React-Collection/edit/master/docs/Clusters.mdx",
         "slug": "docs-clusters",
-        "route": "/docs/docs-clusters",
+        "route": "/docs-clusters",
         "headings": []
       }
     },
@@ -487,9 +429,9 @@
         "menu": "La classe Map",
         "id": "fad8db50805ef97f02433c0fc8b2ebbf",
         "filepath": "docs/Controles.mdx",
-        "link": "https://github.com/gatsbyjs/gatsby-starter-default/edit/master/docs/Controles.mdx",
+        "link": "https://github.com/sandix34/OpenLayers-React-Collection/edit/master/docs/Controles.mdx",
         "slug": "docs-controles",
-        "route": "/docs/docs-controles",
+        "route": "/docs-controles",
         "headings": []
       }
     },
@@ -500,9 +442,9 @@
         "menu": "Les interractions",
         "id": "b0fd5fbf089644bfe1a38d2810e676a7",
         "filepath": "docs/Dessin.mdx",
-        "link": "https://github.com/gatsbyjs/gatsby-starter-default/edit/master/docs/Dessin.mdx",
+        "link": "https://github.com/sandix34/OpenLayers-React-Collection/edit/master/docs/Dessin.mdx",
         "slug": "docs-dessin",
-        "route": "/docs/docs-dessin",
+        "route": "/docs-dessin",
         "headings": []
       }
     },
@@ -513,9 +455,9 @@
         "menu": "La classe Map",
         "id": "cfb6abc84cb003ccd37a5f64a189a97f",
         "filepath": "docs/Evenements.mdx",
-        "link": "https://github.com/gatsbyjs/gatsby-starter-default/edit/master/docs/Evenements.mdx",
+        "link": "https://github.com/sandix34/OpenLayers-React-Collection/edit/master/docs/Evenements.mdx",
         "slug": "docs-evenements",
-        "route": "/docs/docs-evenements",
+        "route": "/docs-evenements",
         "headings": []
       }
     },
@@ -526,9 +468,9 @@
         "menu": "Les couches SIG",
         "id": "e82d1de497c802782e80de1116dd7627",
         "filepath": "docs/FondCarteStamenTerrain.mdx",
-        "link": "https://github.com/gatsbyjs/gatsby-starter-default/edit/master/docs/FondCarteStamenTerrain.mdx",
+        "link": "https://github.com/sandix34/OpenLayers-React-Collection/edit/master/docs/FondCarteStamenTerrain.mdx",
         "slug": "docs-fond-carte-stamen-terrain",
-        "route": "/docs/docs-fond-carte-stamen-terrain",
+        "route": "/docs-fond-carte-stamen-terrain",
         "headings": []
       }
     },
@@ -539,9 +481,9 @@
         "menu": "Les couches SIG",
         "id": "8e3c11d5f8554a9db21da9e08ca66343",
         "filepath": "docs/FondCarteStamenToner.mdx",
-        "link": "https://github.com/gatsbyjs/gatsby-starter-default/edit/master/docs/FondCarteStamenToner.mdx",
+        "link": "https://github.com/sandix34/OpenLayers-React-Collection/edit/master/docs/FondCarteStamenToner.mdx",
         "slug": "docs-fond-carte-stamen-toner",
-        "route": "/docs/docs-fond-carte-stamen-toner",
+        "route": "/docs-fond-carte-stamen-toner",
         "headings": []
       }
     },
@@ -552,9 +494,9 @@
         "menu": "Les couches SIG",
         "id": "6313a5bb031d500c0fa22dc846b42c5e",
         "filepath": "docs/FondCarteStamenWatercolor.mdx",
-        "link": "https://github.com/gatsbyjs/gatsby-starter-default/edit/master/docs/FondCarteStamenWatercolor.mdx",
+        "link": "https://github.com/sandix34/OpenLayers-React-Collection/edit/master/docs/FondCarteStamenWatercolor.mdx",
         "slug": "docs-fond-carte-stamen-watercolor",
-        "route": "/docs/docs-fond-carte-stamen-watercolor",
+        "route": "/docs-fond-carte-stamen-watercolor",
         "headings": []
       }
     },
@@ -565,9 +507,9 @@
         "menu": "Les styles",
         "id": "d3eb6798da1f081ee5e18dfa1fbd5e67",
         "filepath": "docs/IconsLabels.mdx",
-        "link": "https://github.com/gatsbyjs/gatsby-starter-default/edit/master/docs/IconsLabels.mdx",
+        "link": "https://github.com/sandix34/OpenLayers-React-Collection/edit/master/docs/IconsLabels.mdx",
         "slug": "docs-icons-labels",
-        "route": "/docs/docs-icons-labels",
+        "route": "/docs-icons-labels",
         "headings": []
       }
     },
@@ -578,9 +520,9 @@
         "menu": "La classe Map",
         "id": "d05f4ab5e2fdd38b07456679ad9129f1",
         "filepath": "docs/MapView.mdx",
-        "link": "https://github.com/gatsbyjs/gatsby-starter-default/edit/master/docs/MapView.mdx",
+        "link": "https://github.com/sandix34/OpenLayers-React-Collection/edit/master/docs/MapView.mdx",
         "slug": "docs-map-view",
-        "route": "/docs/docs-map-view",
+        "route": "/docs-map-view",
         "headings": []
       }
     },
@@ -591,9 +533,9 @@
         "menu": "Les interractions",
         "id": "422bb3dcf7b377725c4baafb77f7ddf4",
         "filepath": "docs/Modification.mdx",
-        "link": "https://github.com/gatsbyjs/gatsby-starter-default/edit/master/docs/Modification.mdx",
+        "link": "https://github.com/sandix34/OpenLayers-React-Collection/edit/master/docs/Modification.mdx",
         "slug": "docs-modification",
-        "route": "/docs/docs-modification",
+        "route": "/docs-modification",
         "headings": []
       }
     },
@@ -604,9 +546,9 @@
         "menu": "Les groupes de couches, clusters et overlays",
         "id": "53b8660fd9a9989c553911f6f8b7ff3f",
         "filepath": "docs/Overlays.mdx",
-        "link": "https://github.com/gatsbyjs/gatsby-starter-default/edit/master/docs/Overlays.mdx",
+        "link": "https://github.com/sandix34/OpenLayers-React-Collection/edit/master/docs/Overlays.mdx",
         "slug": "docs-overlays",
-        "route": "/docs/docs-overlays",
+        "route": "/docs-overlays",
         "headings": []
       }
     },
@@ -617,9 +559,9 @@
         "menu": "La classe Map",
         "id": "1f706eef4d474381bc21e8e71c8cdd37",
         "filepath": "docs/Projection.mdx",
-        "link": "https://github.com/gatsbyjs/gatsby-starter-default/edit/master/docs/Projection.mdx",
+        "link": "https://github.com/sandix34/OpenLayers-React-Collection/edit/master/docs/Projection.mdx",
         "slug": "docs-projection",
-        "route": "/docs/docs-projection",
+        "route": "/docs-projection",
         "headings": []
       }
     },
@@ -630,9 +572,9 @@
         "menu": "La classe Map",
         "id": "5bb6076fcd20c4e7968ec3e2d86732f3",
         "filepath": "docs/Projection2.mdx",
-        "link": "https://github.com/gatsbyjs/gatsby-starter-default/edit/master/docs/Projection2.mdx",
+        "link": "https://github.com/sandix34/OpenLayers-React-Collection/edit/master/docs/Projection2.mdx",
         "slug": "docs-projection2",
-        "route": "/docs/docs-projection2",
+        "route": "/docs-projection2",
         "headings": []
       }
     },
@@ -643,9 +585,9 @@
         "menu": "Les interractions",
         "id": "9301c6a6477a907b591060fbe35a56c0",
         "filepath": "docs/Selection.mdx",
-        "link": "https://github.com/gatsbyjs/gatsby-starter-default/edit/master/docs/Selection.mdx",
+        "link": "https://github.com/sandix34/OpenLayers-React-Collection/edit/master/docs/Selection.mdx",
         "slug": "docs-selection",
-        "route": "/docs/docs-selection",
+        "route": "/docs-selection",
         "headings": []
       }
     },
@@ -656,9 +598,9 @@
         "menu": "Les styles",
         "id": "ceeb17a1a446acb593569dfab00976e6",
         "filepath": "docs/StylesGeometry.mdx",
-        "link": "https://github.com/gatsbyjs/gatsby-starter-default/edit/master/docs/StylesGeometry.mdx",
+        "link": "https://github.com/sandix34/OpenLayers-React-Collection/edit/master/docs/StylesGeometry.mdx",
         "slug": "docs-styles-geometry",
-        "route": "/docs/docs-styles-geometry",
+        "route": "/docs-styles-geometry",
         "headings": []
       }
     },
@@ -669,9 +611,9 @@
         "menu": "Les interractions",
         "id": "d079a46ea5f5c29401e7a077d77243f6",
         "filepath": "docs/Translation.mdx",
-        "link": "https://github.com/gatsbyjs/gatsby-starter-default/edit/master/docs/Translation.mdx",
+        "link": "https://github.com/sandix34/OpenLayers-React-Collection/edit/master/docs/Translation.mdx",
         "slug": "docs-translation",
-        "route": "/docs/docs-translation",
+        "route": "/docs-translation",
         "headings": []
       }
     },
@@ -682,9 +624,9 @@
         "menu": "Les couches SIG",
         "id": "f0f5e96090a7973ae154dae9b19e74c9",
         "filepath": "docs/VecteurFichier.mdx",
-        "link": "https://github.com/gatsbyjs/gatsby-starter-default/edit/master/docs/VecteurFichier.mdx",
+        "link": "https://github.com/sandix34/OpenLayers-React-Collection/edit/master/docs/VecteurFichier.mdx",
         "slug": "docs-vecteur-fichier",
-        "route": "/docs/docs-vecteur-fichier",
+        "route": "/docs-vecteur-fichier",
         "headings": []
       }
     },
@@ -695,9 +637,9 @@
         "menu": "Les couches SIG",
         "id": "2f4b6ddf2e8e25f193c9d61eb5106dd3",
         "filepath": "docs/VecteurGeometry.mdx",
-        "link": "https://github.com/gatsbyjs/gatsby-starter-default/edit/master/docs/VecteurGeometry.mdx",
+        "link": "https://github.com/sandix34/OpenLayers-React-Collection/edit/master/docs/VecteurGeometry.mdx",
         "slug": "docs-vecteur-geometry",
-        "route": "/docs/docs-vecteur-geometry",
+        "route": "/docs-vecteur-geometry",
         "headings": []
       }
     },
@@ -705,10 +647,10 @@
       "key": "docs/index.mdx",
       "value": {
         "name": "Introduction",
-        "route": "/docs/docs",
+        "route": "/docs",
         "id": "73498ad0e1e62a714b08085d318f9de1",
         "filepath": "docs/index.mdx",
-        "link": "https://github.com/gatsbyjs/gatsby-starter-default/edit/master/docs/index.mdx",
+        "link": "https://github.com/sandix34/OpenLayers-React-Collection/edit/master/docs/index.mdx",
         "slug": "docs-index",
         "menu": "",
         "headings": [

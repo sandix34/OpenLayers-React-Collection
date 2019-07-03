@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "openlayers-react-collection",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "Une collection d'exemple de code OpenLayers basée sur React présentée dans Gatsby-Docz",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Sandrine Zocca <sandrinezocca@gmail.com>",
   "dependencies": {
     "docz": "^1.2.0",
     "docz-theme-default": "^1.2.0",
@@ -40,9 +40,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
-  },
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/sandix34/OpenLayers-React-Collection"
   }
 }
