@@ -4,6 +4,7 @@
   "description": "Une collection d'exemple de code OpenLayers basée sur React présentée dans Gatsby-Docz",
   "version": "0.1.0",
   "author": "Sandrine Zocca <sandrinezocca@gmail.com>",
+  "repository": "sandix34/OpenLayers-React-Collection",
   "dependencies": {
     "docz": "^1.2.0",
     "docz-theme-default": "^1.2.0",
@@ -37,9 +38,5 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/sandix34/OpenLayers-React-Collection"
   }
 }
