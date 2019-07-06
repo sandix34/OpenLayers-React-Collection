@@ -221,15 +221,7 @@
         {
           "description": "----------------------\nAffficher une carte\n----------------------\nConcepts de base - Le composant principal d' OpenLayers\nhttps://openlayers.org/en/latest/doc/tutorials/concepts.html\n\nConventions de module et de nommage\nhttps://openlayers.org/en/latest/doc/tutorials/background.html\n\nMettre une carte sur une page\nhttps://openlayers.org/en/latest/doc/quickstart.html",
           "displayName": "MapView",
-          "methods": [
-            {
-              "name": "updateMap",
-              "docblock": null,
-              "modifiers": [],
-              "params": [],
-              "returns": null
-            }
-          ],
+          "methods": [],
           "actualName": "MapView"
         }
       ]
