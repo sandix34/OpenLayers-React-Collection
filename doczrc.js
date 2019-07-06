@@ -1,3 +1,5 @@
+
+
 export default {
     title: 'Exemples de code OpenLayers / React',
     base: '/',

@@ -380,50 +380,6 @@
           "actualName": "VecteurGeometry"
         }
       ]
-    },
-    {
-      "key": "src/components/background.js",
-      "value": [
-        {
-          "description": "",
-          "displayName": "Background",
-          "methods": [],
-          "actualName": "Background"
-        }
-      ]
-    },
-    {
-      "key": "src/pages/index.js",
-      "value": [
-        {
-          "description": "",
-          "displayName": "IndexPage",
-          "methods": [],
-          "actualName": "IndexPage"
-        }
-      ]
-    },
-    {
-      "key": "src/components/header.js",
-      "value": [
-        {
-          "description": "",
-          "displayName": "Header",
-          "methods": [],
-          "actualName": "Header"
-        }
-      ]
-    },
-    {
-      "key": "src/components/layout.js",
-      "value": [
-        {
-          "description": "",
-          "displayName": "Layout",
-          "methods": [],
-          "actualName": "Layout"
-        }
-      ]
     }
   ],
   "entries": [
@@ -699,14 +655,9 @@
         "menu": "",
         "headings": [
           {
-            "slug": "getting-started",
-            "depth": 1,
-            "value": "Getting Started"
-          },
-          {
-            "slug": "hello-world",
+            "slug": "bonjour-et-bienvenue-",
             "depth": 2,
-            "value": "Hello world"
+            "value": "Bonjour et bienvenue !"
           }
         ]
       }
