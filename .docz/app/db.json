@@ -380,6 +380,50 @@
           "actualName": "VecteurGeometry"
         }
       ]
+    },
+    {
+      "key": "src/components/background.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Background",
+          "methods": [],
+          "actualName": "Background"
+        }
+      ]
+    },
+    {
+      "key": "src/pages/index.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "IndexPage",
+          "methods": [],
+          "actualName": "IndexPage"
+        }
+      ]
+    },
+    {
+      "key": "src/components/header.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Header",
+          "methods": [],
+          "actualName": "Header"
+        }
+      ]
+    },
+    {
+      "key": "src/components/layout.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Layout",
+          "methods": [],
+          "actualName": "Layout"
+        }
+      ]
     }
   ],
   "entries": [

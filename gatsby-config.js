@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Une collection d'exemples OpenLayers / React`,
+    description:`test`,
+    author: `Sandrine Zocca`,
   },
   __experimentalThemes: [`gatsby-theme-docz`],
   plugins: [
@@ -19,8 +19,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `OpenLayers-React-Collection`,
+        short_name: `collection`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,

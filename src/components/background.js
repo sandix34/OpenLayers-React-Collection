@@ -47,7 +47,8 @@ const Background = () => {
         height: '100%',
         width: '100%',
         zIndex: '-999999',
-        position: 'fixed'
+        position: 'fixed',
+        
       }}
     >
       <Image />

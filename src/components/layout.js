@@ -6,15 +6,15 @@
  */
 
 import React from "react"
-import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
+import { Link } from "gatsby"
 
 import Header from "./header"
 import "./layout.css"
 
 import Background from "../components/background"
 
-const Layout = ({ children }) => (
+const Layout = () => (
   <StaticQuery
     query={graphql`
       query SiteTitleQuery {
@@ -31,26 +31,32 @@ const Layout = ({ children }) => (
         <Header siteTitle={data.site.siteMetadata.title} />
         <div
           style={{
-            margin: `0 auto`,
-            maxWidth: 960,
-            padding: `0px 1.0875rem 1.45rem`,
-            paddingTop: 0,
+            textAlign: "center",
+            padding: "4em",
           }}
         >
-          <main>{children}</main>
-          <footer>
-            © {new Date().getFullYear()}, Built with
-            {` `}
-            <a href="https://www.gatsbyjs.org">Gatsby</a>
-          </footer>
+          <Link
+            style={{
+              color: "white",
+              fontWeight: "bold",
+              fontSize: '2em',
+            }}
+            to="/docs"
+          >
+            Voir les exemples
+          </Link>
         </div>
+
+        <footer style={{ textAlign: "center" }}>
+          © {new Date().getFullYear()}, Built with
+          {` `}
+          <a href="https://www.gatsbyjs.org/tutorial/writing-documentation-with-docz/">
+            Gatsby-Docz
+          </a>
+        </footer>
       </>
     )}
   />
 )
-
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
-}
 
 export default Layout
