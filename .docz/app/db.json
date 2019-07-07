@@ -91,25 +91,6 @@
       ]
     },
     {
-      "key": "docs/Controles.jsx",
-      "value": [
-        {
-          "description": "--------------\nLes contrôles\n--------------\n\nLes contrôles ol.control  sont d'autres composantes de la classe Map.\nChaque méthode possède ses propres options.\nIl est possible de modifier le style CSS ou d'ajouter certaines fonctions javascript\nOpenLayers montre par exemple comment modifier le style CSS (couleur, place des éléments, etc) du ZoomSlider\nhttps://openlayers.org/en/latest/examples/zoomslider.html",
-          "displayName": "Controles",
-          "methods": [
-            {
-              "name": "updateMap",
-              "docblock": null,
-              "modifiers": [],
-              "params": [],
-              "returns": null
-            }
-          ],
-          "actualName": "Controles"
-        }
-      ]
-    },
-    {
       "key": "docs/Dessin.jsx",
       "value": [
         {
@@ -362,6 +343,17 @@
             }
           ],
           "actualName": "VecteurGeometry"
+        }
+      ]
+    },
+    {
+      "key": "docs/Controles.jsx",
+      "value": [
+        {
+          "description": "--------------\nLes contrôles\n--------------\n\nLes contrôles ol.control  sont d'autres composantes de la classe Map.\nChaque méthode possède ses propres options.\nIl est possible de modifier le style CSS ou d'ajouter certaines fonctions javascript\nOpenLayers montre par exemple comment modifier le style CSS (couleur, place des éléments, etc) du ZoomSlider\nhttps://openlayers.org/en/latest/examples/zoomslider.html",
+          "displayName": "Controles",
+          "methods": [],
+          "actualName": "Controles"
         }
       ]
     }

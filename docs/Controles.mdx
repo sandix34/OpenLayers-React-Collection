@@ -6,20 +6,42 @@ menu: La classe Map
 import { Playground } from 'docz'
 import Controles from './Controles'
 
+Les [contrôles](https://openlayers.org/en/latest/apidoc/module-ol_control.html) sont d'autres composantes de la classe [Map](https://openlayers.org/en/latest/apidoc/module-ol_Map-Map.html).
+
+Les contrôles disponibles sont: 
+- [Attribution](https://openlayers.org/en/latest/apidoc/module-ol_control_Attribution-Attribution.html) : 
+  Contrôle pour afficher toutes les attributions associées aux sources de la couche dans la carte. Ce contrôle est l’un des contrôles par défaut inclus dans les cartes. Par défaut, il apparaîtra dans la partie inférieure droite de la carte.
+- [FullScreen](https://openlayers.org/en/latest/apidoc/module-ol_control_FullScreen-FullScreen.html) : 
+  Fournit un bouton qui, lorsqu'il est cliqué, remplit la carte en plein écran. L'élément source en plein écran est par défaut l'élément contenant la fenêtre d'affichage de la carte.
+- [MousePosition](https://openlayers.org/en/latest/apidoc/module-ol_control_MousePosition-MousePosition.html) :
+  Un contrôle pour afficher les coordonnées 2D du curseur de la souris. Par défaut, ils sont dans la projection de vues et affiché dans le coin supérieur droit de la carte.
+- [OverviewMap](https://openlayers.org/en/latest/apidoc/module-ol_control_OverviewMap-OverviewMap.html) :
+  Contrôle avec une carte faisant office de carte de synthèse. Ce contrôle chevauche l'échelle.
+- [Rotate](https://openlayers.org/en/latest/apidoc/module-ol_control_Rotate-Rotate.html) : 
+  Un bouton de contrôle permet de réinitialiser la rotation à 0.
+- [ScaleLine](https://openlayers.org/en/latest/apidoc/module-ol_control_ScaleLine-ScaleLine.html) : 
+  L'échelle est en bas à gauche du conteneur.
+- [ZoomSlider](https://openlayers.org/en/latest/apidoc/module-ol_control_ZoomSlider-ZoomSlider.html) :
+  Un type de contrôle de curseur pour zoomer, située à gauche.
+- [ZoomToExtent](https://openlayers.org/en/latest/apidoc/module-ol_control_ZoomToExtent-ZoomToExtent.html) :
+  Ce contrôle, désigné par la lettre E, permet de spécifier une étendue géographique.
 
 <Controles />
 
 ```jsx
 import React, { Component } from "react";
 
+// classes nécéssaires pour afficher la carte
 import 'ol/ol.css';
 import Map from 'ol/Map';
 import View from 'ol/View';
 import TileLayer from 'ol/layer/Tile';
 import OSM from 'ol/source/OSM';
 
+// Transforme une coordonnée de longitude / latitude en une projection différente
 import {fromLonLat} from 'ol/proj';
 
+// Ensemble de contrôles
 import { defaults, OverviewMap, MousePosition, FullScreen, Rotate, ZoomSlider, ZoomToExtent, ScaleLine } from 'ol/control.js';
 
 
@@ -58,32 +80,12 @@ class Controles extends Component {
     });
   }
 
-  updateMap() {
-    this.olmap.getView().setCenter(this.state.center);
-    this.olmap.getView().setZoom(this.state.zoom);
-  }
-
   componentDidMount() {
+    // Défini l'id de l'élément dans lequel la carte est rendue.
     this.olmap.setTarget("map4");
-
-    // Listen to map changes
-    this.olmap.on("moveend", () => {
-      let center = this.olmap.getView().getCenter();
-      let zoom = this.olmap.getView().getZoom();
-      this.setState({ center, zoom });
-    });
   }
-
-  shouldComponentUpdate(nextProps, nextState) {
-    let center = this.olmap.getView().getCenter();
-    let zoom = this.olmap.getView().getZoom();
-    if (center === nextState.center && zoom === nextState.zoom) return false;
-    return true;
-  }
-
 
   render() {
-    this.updateMap(); // Update map on render?
     return (
       <div id="map4" style={{ width: "100%", height: "360px" }}>
       </div>
