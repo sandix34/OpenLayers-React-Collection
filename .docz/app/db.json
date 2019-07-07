@@ -1,6 +1,6 @@
 {
   "config": {
-    "title": "Exemples de code OpenLayers / React",
+    "title": "Openlayers React Collection",
     "description": "Une collection d'exemple de code OpenLayers basée sur React présentée dans Gatsby-Docz",
     "menu": [
       "Introduction",
@@ -335,6 +335,19 @@
     }
   ],
   "entries": [
+    {
+      "key": "docs/A.mdx",
+      "value": {
+        "name": " ",
+        "id": "3004784bd550f43cf6095271c0fa797e",
+        "filepath": "docs/A.mdx",
+        "link": "https://github.com/sandix34/OpenLayers-React-Collection/edit/master/docs/A.mdx",
+        "slug": "docs-a",
+        "route": "/docs-a",
+        "menu": "",
+        "headings": []
+      }
+    },
     {
       "key": "docs/CarteWFS.mdx",
       "value": {

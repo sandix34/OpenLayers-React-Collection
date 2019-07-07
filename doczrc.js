@@ -1,7 +1,7 @@
 
 
 export default {
-    title: 'Exemples de code OpenLayers / React',
+    //title: 'Exemples de code OpenLayers / React',
     base: '/',
     ignore: ['**/blog/**', 'readme.md'],
     menu: [

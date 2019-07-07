@@ -1,4 +1,8 @@
 export const imports = {
+  'docs/A.mdx': () =>
+    import(
+      /* webpackPrefetch: true, webpackChunkName: "docs-a" */ 'docs/A.mdx'
+    ),
   'docs/CarteWFS.mdx': () =>
     import(
       /* webpackPrefetch: true, webpackChunkName: "docs-carte-wfs" */ 'docs/CarteWFS.mdx'
