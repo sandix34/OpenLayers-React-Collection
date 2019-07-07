@@ -29,7 +29,7 @@ class Projection extends Component {
     super(props);
 
     this.state = { 
-        center: fromLonLat([1.3529599,44.0221252]), 
+        center: fromLonLat([ 3.876716,43.610769 ]), 
         zoom: 10 
     };
 

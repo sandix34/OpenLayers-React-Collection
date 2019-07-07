@@ -249,25 +249,6 @@
       ]
     },
     {
-      "key": "docs/Projection.jsx",
-      "value": [
-        {
-          "description": "-----------------------------\nChanger la projection\n-----------------------------\n\nIl est possible de spécifier plusieurs options dans la vue\ncomme la résolution de la carte, la rotation et la projection \nol.proj  qui par défaut, est l'EPSG:3857 et l'EPSG:4326 est aussi chargée.\nLe code suivant introduit le centrage de la \ncarte avec une transformation de la projection des coordonnées\ngéographiques.\n\nhttps://openlayers.org/en/latest/apidoc/module-ol_proj.html",
-          "displayName": "Projection",
-          "methods": [
-            {
-              "name": "updateMap",
-              "docblock": null,
-              "modifiers": [],
-              "params": [],
-              "returns": null
-            }
-          ],
-          "actualName": "Projection"
-        }
-      ]
-    },
-    {
       "key": "docs/Projection2.jsx",
       "value": [
         {
@@ -370,6 +351,25 @@
             }
           ],
           "actualName": "VecteurGeometry"
+        }
+      ]
+    },
+    {
+      "key": "docs/Projection.jsx",
+      "value": [
+        {
+          "description": "-----------------------------\nChanger la projection\n-----------------------------\n\nIl est possible de spécifier plusieurs options dans la vue\ncomme la résolution de la carte, la rotation et la projection \nol.proj  qui par défaut, est l'EPSG:3857 et l'EPSG:4326 est aussi chargée.\nLe code suivant introduit le centrage de la \ncarte avec une transformation de la projection des coordonnées\ngéographiques.\n\nhttps://openlayers.org/en/latest/apidoc/module-ol_proj.html",
+          "displayName": "Projection",
+          "methods": [
+            {
+              "name": "updateMap",
+              "docblock": null,
+              "modifiers": [],
+              "params": [],
+              "returns": null
+            }
+          ],
+          "actualName": "Projection"
         }
       ]
     }
@@ -547,7 +547,7 @@
     {
       "key": "docs/Projection.mdx",
       "value": {
-        "name": "Changer la projection",
+        "name": "Centrer la carte",
         "menu": "La classe Map",
         "id": "1f706eef4d474381bc21e8e71c8cdd37",
         "filepath": "docs/Projection.mdx",
