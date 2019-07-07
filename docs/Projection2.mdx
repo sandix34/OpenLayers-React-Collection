@@ -6,23 +6,36 @@ menu: La classe Map
 import { Playground } from 'docz'
 import Projection2 from './Projection2'
 
+Pour utiliser des projections différentes de celles par defaut (EPSG:3857 ainsi que EPSG:4326),
+il est indispensable de charger la librairie [Proj4js](http://proj4js.org/).
+
+Cet exemple utilise la projection Lambert 93 (EPSG:2154).
 
 <Projection2 />
 
 ```jsx
 import React, { Component } from "react";
 
+// classes nécéssaires pour afficher la carte
 import 'ol/ol.css';
 import Map from 'ol/Map';
 import View from 'ol/View';
 import TileLayer from 'ol/layer/Tile';
 import OSM from 'ol/source/OSM';
 
-import {transform} from 'ol/proj';
+// librairie Proj4js indispensable pour utiliser des projections différentes de celles par defaut
+import proj4 from 'proj4';
+
+// Rendre les projections définies dans proj4 (avec proj4.defs()) disponibles dans OpenLayers.
+import {register} from 'ol/proj/proj4';
+
+// Récupère un objet Projection pour le code spécifié. 
 import {get as getProjection} from 'ol/proj';
 
-import proj4 from 'proj4';
-import {register} from 'ol/proj/proj4';
+// Transforme une coordonnée de la projection source à la projection cible. Cela retourne une nouvelle coordonnée (et ne modifie pas l'original)
+import {transform} from 'ol/proj';
+
+
 
 
 class Projection2 extends Component {
@@ -32,17 +45,20 @@ class Projection2 extends Component {
 
     this.state = { 
         center: [2, 45] , 
-        zoom: 3,
-        projection: getProjection('EPSG:2154') 
+        zoom: 3
     };
 
 
     //déclaration de la projection en EPSG:2154 (Lambert 93)
     this.proj4 =  proj4.defs("EPSG:2154","+proj=lcc +lat_1=49 +lat_2=44 +lat_0=46.5 +lon_0=3 +x_0=700000 +y_0=6600000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs");
+    
     this.proj4Register = register(proj4);
+
+    this.projection = getProjection('EPSG:2154');
 
     this.centerTransform = transform(this.state.center,'EPSG:4326', 'EPSG:2154')
 
+    // Déclaration de la carte
     this.olmap = new Map({
       target: null,
       layers: [
@@ -51,40 +67,19 @@ class Projection2 extends Component {
         })
       ],
       view: new View({
-        projection: this.state.projection,  
+        projection: this.projection,  
         center: this.centerTransform,
         zoom: this.state.zoom
       })
     });
   }
 
-
-  updateMap() {
-    this.olmap.getView().setCenter(this.centerTransform);
-    this.olmap.getView().setZoom(this.state.zoom);
-  }
-
   componentDidMount() {
+    // Défini l'id de l'élément dans lequel la carte est rendue.
     this.olmap.setTarget("map3");
-
-    // Listen to map changes
-    this.olmap.on("moveend", () => {
-      let center = this.olmap.getView().getCenter();
-      let zoom = this.olmap.getView().getZoom();
-      this.setState({ center, zoom });
-    });
   }
-
-  shouldComponentUpdate(nextProps, nextState) {
-    let center = this.olmap.getView().getCenter();
-    let zoom = this.olmap.getView().getZoom();
-    if (center === nextState.center && zoom === nextState.zoom) return false;
-    return true;
-  }
-
 
   render() {
-    this.updateMap(); // Update map on render?
     return (
       <div id="map3" style={{ width: "100%", height: "360px" }}>
       </div>

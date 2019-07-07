@@ -249,11 +249,11 @@
       ]
     },
     {
-      "key": "docs/Projection2.jsx",
+      "key": "docs/Projection.jsx",
       "value": [
         {
-          "description": "------------------------\nProjections différentes\n------------------------\nPour utiliser des projections différentes, que ce soit dans l'option même de la vue ou\n pour les couches SIG, il est indispensable de charger la libraire Proj4js.\n(http://proj4js.org/) \n\nDans l'exemple ci-après, on utilise la projection Lambert 93 (EPSG:2154) \nque l'on déclare dans un premier temps puis on l'affecte à l'objet ol.View.",
-          "displayName": "Projection2",
+          "description": "-----------------------------\nChanger la projection\n-----------------------------\n\nIl est possible de spécifier plusieurs options dans la vue\ncomme la résolution de la carte, la rotation et la projection \nol.proj  qui par défaut, est l'EPSG:3857 et l'EPSG:4326 est aussi chargée.\nLe code suivant introduit le centrage de la \ncarte avec une transformation de la projection des coordonnées\ngéographiques.\n\nhttps://openlayers.org/en/latest/apidoc/module-ol_proj.html",
+          "displayName": "Projection",
           "methods": [
             {
               "name": "updateMap",
@@ -263,6 +263,17 @@
               "returns": null
             }
           ],
+          "actualName": "Projection"
+        }
+      ]
+    },
+    {
+      "key": "docs/Projection2.jsx",
+      "value": [
+        {
+          "description": "------------------------\nProjections différentes\n------------------------\nPour utiliser des projections différentes, que ce soit dans l'option même de la vue ou\n pour les couches SIG, il est indispensable de charger la libraire Proj4js.\n(http://proj4js.org/) \n\nDans l'exemple ci-après, on utilise la projection Lambert 93 (EPSG:2154) \nque l'on déclare dans un premier temps puis on l'affecte à l'objet ol.View.",
+          "displayName": "Projection2",
+          "methods": [],
           "actualName": "Projection2"
         }
       ]
@@ -351,25 +362,6 @@
             }
           ],
           "actualName": "VecteurGeometry"
-        }
-      ]
-    },
-    {
-      "key": "docs/Projection.jsx",
-      "value": [
-        {
-          "description": "-----------------------------\nChanger la projection\n-----------------------------\n\nIl est possible de spécifier plusieurs options dans la vue\ncomme la résolution de la carte, la rotation et la projection \nol.proj  qui par défaut, est l'EPSG:3857 et l'EPSG:4326 est aussi chargée.\nLe code suivant introduit le centrage de la \ncarte avec une transformation de la projection des coordonnées\ngéographiques.\n\nhttps://openlayers.org/en/latest/apidoc/module-ol_proj.html",
-          "displayName": "Projection",
-          "methods": [
-            {
-              "name": "updateMap",
-              "docblock": null,
-              "modifiers": [],
-              "params": [],
-              "returns": null
-            }
-          ],
-          "actualName": "Projection"
         }
       ]
     }
