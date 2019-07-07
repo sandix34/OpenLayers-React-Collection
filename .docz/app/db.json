@@ -91,6 +91,17 @@
       ]
     },
     {
+      "key": "docs/Controles.jsx",
+      "value": [
+        {
+          "description": "--------------\nLes contrôles\n--------------\n\nLes contrôles ol.control  sont d'autres composantes de la classe Map.\nChaque méthode possède ses propres options.\nIl est possible de modifier le style CSS ou d'ajouter certaines fonctions javascript\nOpenLayers montre par exemple comment modifier le style CSS (couleur, place des éléments, etc) du ZoomSlider\nhttps://openlayers.org/en/latest/examples/zoomslider.html",
+          "displayName": "Controles",
+          "methods": [],
+          "actualName": "Controles"
+        }
+      ]
+    },
+    {
       "key": "docs/Dessin.jsx",
       "value": [
         {
@@ -98,6 +109,17 @@
           "displayName": "Dessin",
           "methods": [],
           "actualName": "Dessin"
+        }
+      ]
+    },
+    {
+      "key": "docs/Evenements.jsx",
+      "value": [
+        {
+          "description": "----------------------\nMéthodes et évènements \n----------------------\nDe nombreuses méthodes sont liées à la classe Map et elles peuvent être déclenchées à partir d'actions appelées \"Fires\".\nLes plus utilisées sont on(type, listener, opt_this), once(type, listener, opt_this) qui contiennent \nune fonction afin d'obtenir des informations de la classe \"parent\".\nCes méthodes sont aussi héritées pour d'autres classes comme celles prenant en charge les sources de données.\n\nDans la version actuelle d'OL, on peut classer les déclencheurs des méthodes selon cinq types :\n\nol.events.Event : un évènement quelconque par le fire change.\n\nol.Object.Event : Les évènements liés à un objet de la classe Map.\n\nol.MapBrowserEvent : Les évènements liés au navigateur web (click, dblclick, pointerdrag, pointermove, singleclick).\n\nol.MapEvent : Les évènement liés à la carte (moveend, movestart, postrender).\n\nol.render.Event : Les évènements liés à un rendu du document (postcompose, precompose).\n\nL'exemple ci-après montre comment obtenir le niveau de zoom dans la console à la fin du défilement de la carte.",
+          "displayName": "Evenements",
+          "methods": [],
+          "actualName": "Evenements"
         }
       ]
     },
@@ -295,15 +317,7 @@
         {
           "description": "---------------------------------\nChargement de fichiers externes\n--------------------------------\n\nIl est courant d'utiliser des sources de données externes tels les fichiers\nde données ou les protocoles HTTP. Concernant les fichiers, il existe de nombreux formats ol.format\nde données vectorielles pris en charge par OL.\nIci, on considère les formats les plus utilisés en SIG : \nGeoJSON, GPX, KML, GML mais on peut citer également les formats TopoJSON, MVT et WKT.\nPour afficher ces données géographiques, il suffit d'indiquer le chemin du fichier par l'URL et\net le format de données dans la source du vecteur.\n\nL'exemple ci-après met en évidence la lecture d'un vecteur de format\nGeoJSON et un de format GPX représentant respectivement les pays du monde et les capitales.",
           "displayName": "VecteurFichier",
-          "methods": [
-            {
-              "name": "updateMap",
-              "docblock": null,
-              "modifiers": [],
-              "params": [],
-              "returns": null
-            }
-          ],
+          "methods": [],
           "actualName": "VecteurFichier"
         }
       ]
@@ -324,28 +338,6 @@
             }
           ],
           "actualName": "VecteurGeometry"
-        }
-      ]
-    },
-    {
-      "key": "docs/Controles.jsx",
-      "value": [
-        {
-          "description": "--------------\nLes contrôles\n--------------\n\nLes contrôles ol.control  sont d'autres composantes de la classe Map.\nChaque méthode possède ses propres options.\nIl est possible de modifier le style CSS ou d'ajouter certaines fonctions javascript\nOpenLayers montre par exemple comment modifier le style CSS (couleur, place des éléments, etc) du ZoomSlider\nhttps://openlayers.org/en/latest/examples/zoomslider.html",
-          "displayName": "Controles",
-          "methods": [],
-          "actualName": "Controles"
-        }
-      ]
-    },
-    {
-      "key": "docs/Evenements.jsx",
-      "value": [
-        {
-          "description": "----------------------\nMéthodes et évènements \n----------------------\nDe nombreuses méthodes sont liées à la classe Map et elles peuvent être déclenchées à partir d'actions appelées \"Fires\".\nLes plus utilisées sont on(type, listener, opt_this), once(type, listener, opt_this) qui contiennent \nune fonction afin d'obtenir des informations de la classe \"parent\".\nCes méthodes sont aussi héritées pour d'autres classes comme celles prenant en charge les sources de données.\n\nDans la version actuelle d'OL, on peut classer les déclencheurs des méthodes selon cinq types :\n\nol.events.Event : un évènement quelconque par le fire change.\n\nol.Object.Event : Les évènements liés à un objet de la classe Map.\n\nol.MapBrowserEvent : Les évènements liés au navigateur web (click, dblclick, pointerdrag, pointermove, singleclick).\n\nol.MapEvent : Les évènement liés à la carte (moveend, movestart, postrender).\n\nol.render.Event : Les évènements liés à un rendu du document (postcompose, precompose).\n\nL'exemple ci-après montre comment obtenir le niveau de zoom dans la console à la fin du défilement de la carte.",
-          "displayName": "Evenements",
-          "methods": [],
-          "actualName": "Evenements"
         }
       ]
     }

@@ -3,104 +3,104 @@ name: Chargement de fichiers externes
 menu: Les couches SIG
 ---
 
-import { Playground } from 'docz'
-import VecteurFichier from './VecteurFichier'
+import { Playground } from "docz"
+import VecteurFichier from "./VecteurFichier"
 
+Il est courant d'utiliser des sources de données externes tels les fichiers de données.
+
+Il existe de nombreux formats de données vectorielles pris en charge par OpenLayers dont les plus utilisés :
+- [GPX](https://openlayers.org/en/latest/apidoc/module-ol_format_GPX-GPX.html) :
+  Format de fonction pour la lecture et l'écriture de données au format GPX.
+- [GeoJSON](https://openlayers.org/en/latest/apidoc/module-ol_format_GeoJSON-GeoJSON.html) :
+  Format d'entité pour la lecture et l'écriture de données au format GeoJSON.
+- [KML](https://openlayers.org/en/latest/apidoc/module-ol_format_KML-KML.html) : 
+  Format d'entité pour la lecture et l'écriture de données au format KML.
+
+Pour afficher ces données géographiques, il suffit d'indiquer le chemin du fichier par l'URL et le format de données dans la source du vecteur.
+
+L'exemple met en évidence la lecture d'un vecteur de format GeoJSON et un de format GPX représentant respectivement les pays du monde et les capitales.
 
 <VecteurFichier />
 
 ```jsx
-import React, { Component } from "react";
-import Map from 'ol/Map';
-import View from 'ol/View';
-import TileLayer from 'ol/layer/Tile';
-import OSM from 'ol/source/OSM';
-import 'ol/ol.css';
+import React, { Component } from "react"
 
-import GPX from 'ol/format/GPX';
-import GeoJSON from 'ol/format/GeoJSON';
-import VectorLayer from 'ol/layer/Vector';
-import VectorSource from 'ol/source/Vector';
+// classes nécéssaires pour afficher la carte
+import Map from "ol/Map"
+import View from "ol/View"
+import TileLayer from "ol/layer/Tile"
+import OSM from "ol/source/OSM"
+import "ol/ol.css"
+
+// Format de fonction pour la lecture et l'écriture de données au format GPX.
+import GPX from "ol/format/GPX"
+
+// Format d'entité pour la lecture et l'écriture de données au format GeoJSON.
+import GeoJSON from "ol/format/GeoJSON"
+
+// Fournit une source d’entités pour les couches vectorielles.
+import VectorSource from "ol/source/Vector"
+
+// Données vectorielles rendues côté client.
+import VectorLayer from "ol/layer/Vector"
+
+
 
 class VecteurFichier extends Component {
   constructor(props) {
-    super(props);
+    super(props)
 
-    this.state = { 
-        center: [0, 0], 
-        zoom: 2
-    };
+    this.state = {
+      center: [0, 0],
+      zoom: 2,
+    }
 
     // Source de données du vecteur en format GeoJSON
     this.sourceGeoJSON = new VectorSource({
-    url: '../data/pays.geojson',
-	format: new GeoJSON()
-    });
-    // Déclaration de la couche vectorielle	
+      url: "../data/pays.geojson",
+      format: new GeoJSON(),
+    })
+    // Déclaration de la couche vectorielle
     this.vecteurGeoJSON = new VectorLayer({
-	source: this.sourceGeoJSON,
-    });
+      source: this.sourceGeoJSON,
+    })
 
     // Source de données du vecteur en format GPX
-    this.sourceGPX = new VectorSource({ 
-	url: '../data/capitales.gpx',
-	format: new GPX()
-    });
-    // Déclaration de la couche vectorielle	
+    this.sourceGPX = new VectorSource({
+      url: "../data/capitales.gpx",
+      format: new GPX(),
+    })
+    // Déclaration de la couche vectorielle
     this.vecteurGPX = new VectorLayer({
-	source: this.sourceGPX,
-    });
+      source: this.sourceGPX,
+    })
 
-
+    // Déclaration de la carte
     this.olmap = new Map({
       target: null,
       layers: [
         new TileLayer({
-          source: new OSM()
+          source: new OSM(),
         }),
         this.vecteurGeoJSON,
-        this.vecteurGPX
+        this.vecteurGPX,
       ],
       view: new View({
         center: this.state.center,
-        zoom: this.state.zoom
-      })
-    });
-  }
-
-  updateMap() {
-    this.olmap.getView().setCenter(this.state.center);
-    this.olmap.getView().setZoom(this.state.zoom);
+        zoom: this.state.zoom,
+      }),
+    })
   }
 
   componentDidMount() {
-    this.olmap.setTarget("map7");
-
-    // Listen to map changes
-    this.olmap.on("moveend", () => {
-      let center = this.olmap.getView().getCenter();
-      let zoom = this.olmap.getView().getZoom();
-      this.setState({ center, zoom });
-    });
+    // Défini l'id de l'élément dans lequel la carte est rendue.
+    this.olmap.setTarget("map7")
   }
-
-  shouldComponentUpdate(nextProps, nextState) {
-    let center = this.olmap.getView().getCenter();
-    let zoom = this.olmap.getView().getZoom();
-    if (center === nextState.center && zoom === nextState.zoom) return false;
-    return true;
-  }
-
 
   render() {
-    this.updateMap(); // Update map on render?
-    return (
-      <div id="map7" style={{ width: "100%", height: "360px" }}>
-      </div>
-    );
+    return <div id="map7" style={{ width: "100%", height: "360px" }}></div>
   }
 }
 
-export default VecteurFichier;
-
+export default VecteurFichier
 ```
