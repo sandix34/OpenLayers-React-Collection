@@ -6,23 +6,39 @@ menu: Les couches SIG
 import { Playground } from 'docz'
 import VecteurGeometry from './VecteurGeometry'
 
+La classe [Feature](https://openlayers.org/en/latest/apidoc/module-ol_Feature-Feature.html) représente une entité géographique.
+
+L' exemple montre la création des types de géométrie suivantes : [Point](https://openlayers.org/en/latest/apidoc/module-ol_geom_Point-Point.html), [ligne](https://openlayers.org/en/latest/apidoc/module-ol_geom_LineString-LineString.html), [polygone](https://openlayers.org/en/latest/apidoc/module-ol_geom_Polygon.html)
 
 <VecteurGeometry />
 
 ```jsx
 import React, { Component } from "react";
-import Map from 'ol/Map';
+
+// classes nécéssaires pour afficher la carte
+import Map frotm 'ol/Map';
 import View from 'ol/View';
 import TileLayer from 'ol/layer/Tile';
 import OSM from 'ol/source/OSM';
 import 'ol/ol.css';
 
-import Feature from 'ol/Feature';
-import LineString from 'ol/geom/LineString';
-import Point from 'ol/geom/Point';
-import Polygon from 'ol/geom/Polygon';
+// classes nécéssaires pour les couches vectorielles.
 import VectorSource from 'ol/source/Vector';
 import VectorLayer from 'ol/layer/Vector';
+
+// Un objet vectoriel pour des entités géographiques avec une géométrie et d'autres propriétés d'attribut
+import Feature from 'ol/Feature';
+
+// Géométrie linéaire.
+import LineString from 'ol/geom/LineString';
+
+// Géométrie ponctuelle.
+import Point from 'ol/geom/Point';
+
+// Géométrie du polygone.
+import Polygon from 'ol/geom/Polygon';
+
+
 
 class VecteurGeometry extends Component {
   constructor(props) {
@@ -60,6 +76,7 @@ class VecteurGeometry extends Component {
         name: 'Polygone'
     });
 
+    // Source de données du vecteur
     this.source = new VectorSource({
       features: [this.entitePoint, this.entiteLigne, this.entitePolygone]
     });
@@ -69,6 +86,7 @@ class VecteurGeometry extends Component {
       source: this.source
     });
 
+    // Déclaration de la carte
     this.olmap = new Map({
       target: null,
       layers: [
@@ -83,33 +101,12 @@ class VecteurGeometry extends Component {
       })
     });
   }
-
-  updateMap() {
-    this.olmap.getView().setCenter(this.state.center);
-    this.olmap.getView().setZoom(this.state.zoom);
-  }
-
   componentDidMount() {
+    // Défini l'id de l'élément dans lequel la carte est rendue.
     this.olmap.setTarget("map6");
-
-    // Listen to map changes
-    this.olmap.on("moveend", () => {
-      let center = this.olmap.getView().getCenter();
-      let zoom = this.olmap.getView().getZoom();
-      this.setState({ center, zoom });
-    });
   }
-
-  shouldComponentUpdate(nextProps, nextState) {
-    let center = this.olmap.getView().getCenter();
-    let zoom = this.olmap.getView().getZoom();
-    if (center === nextState.center && zoom === nextState.zoom) return false;
-    return true;
-  }
-
 
   render() {
-    this.updateMap(); // Update map on render?
     return (
       <div id="map6" style={{ width: "100%", height: "360px" }}>
       </div>

@@ -328,15 +328,7 @@
         {
           "description": "Un vecteur est défini par les entités géographiques qui le composent.\nCes dernières ont une géométrie qui peut être différente les unes des autres \ndans un même vecteur et des valeurs relatives aux champs attributaires de la donnée.\nLes géométries sont soit un point, une ligne, un polygone et lorsque plusieurs entités \nde géométries différentes composent un vecteur, on parle de collection d'objets.\nOL décompose le vecteur en trois éléments :\n - une ou plusieurs entités ol.Feature avec leurs géométries et leurs attributs ;\n - une source de données ol.Source.Vector qui prend en charge les entités. \n   Elle est appelée via un fichier externe ou créée directement dans le script ;\n - la couche SIG ol.Layer.Vector  qui charge la source.\n Les classes des entités, des sources et des données vectorielles :\nLa classe ol.Feature représentant une entité géographique est caractérisée par plusieurs\nsetters et getters, ainsi il est possible d'obtenir ou d'intégrer plusieurs composantes comme :\nla géométrie setGeometry(geometry)/getGeometry(geometry),\nun identifiant unique setId()/getId(),\nune valeur attributaire d'un champ key set(key)/get(key),\nun style ou une fonction de style setStyle()/getStyle().\nEn outre, il est possible d'obtenir l'ensemble des champs attributaires par la méthode getKeys() et l'objet \nde l'entité regroupant la geométrie, les champs et leurs valeurs attributaires : \ngetProperties().\nPar défaut, le nom du champs de la géométrie est geometry.\nCréation d'entités géographiques :\nCommençons par la création de géométries indépendantes d'une source de données externes.\nLes différentes types de géométrie sont définies par la classe ol.geom suivie du type de géométrie : \nPoint, LineString, LinearRing, Polygon, MultiPoint, MultiLineString, MultiPolygon, GeometryCollection, Circle.\nChaque géométrie est composée par un ou des points définis par des coordonnées géographiques X (la longitude) \net Y (la latitude).\nLe code ci-après montre la création d'un point, d'une ligne et d'un polygone.",
           "displayName": "VecteurGeometry",
-          "methods": [
-            {
-              "name": "updateMap",
-              "docblock": null,
-              "modifiers": [],
-              "params": [],
-              "returns": null
-            }
-          ],
+          "methods": [],
           "actualName": "VecteurGeometry"
         }
       ]
