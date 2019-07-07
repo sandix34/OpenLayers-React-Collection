@@ -102,25 +102,6 @@
       ]
     },
     {
-      "key": "docs/Evenements.jsx",
-      "value": [
-        {
-          "description": "----------------------\nMéthodes et évènements \n----------------------\nDe nombreuses méthodes sont liées à la classe Map et elles peuvent être déclenchées à partir d'actions appelées \"Fires\".\nLes plus utilisées sont on(type, listener, opt_this), once(type, listener, opt_this) qui contiennent \nune fonction afin d'obtenir des informations de la classe \"parent\".\nCes méthodes sont aussi héritées pour d'autres classes comme celles prenant en charge les sources de données.\n\nDans la version actuelle d'OL, on peut classer les déclencheurs des méthodes selon cinq types :\n\nol.events.Event : un évènement quelconque par le fire change.\n\nol.Object.Event : Les évènements liés à un objet de la classe Map.\n\nol.MapBrowserEvent : Les évènements liés au navigateur web (click, dblclick, pointerdrag, pointermove, singleclick).\n\nol.MapEvent : Les évènement liés à la carte (moveend, movestart, postrender).\n\nol.render.Event : Les évènements liés à un rendu du document (postcompose, precompose).\n\nL'exemple ci-après montre comment obtenir le niveau de zoom dans la console à la fin du défilement de la carte.",
-          "displayName": "Evenements",
-          "methods": [
-            {
-              "name": "updateMap",
-              "docblock": null,
-              "modifiers": [],
-              "params": [],
-              "returns": null
-            }
-          ],
-          "actualName": "Evenements"
-        }
-      ]
-    },
-    {
       "key": "docs/FondCarteStamenTerrain.jsx",
       "value": [
         {
@@ -354,6 +335,17 @@
           "displayName": "Controles",
           "methods": [],
           "actualName": "Controles"
+        }
+      ]
+    },
+    {
+      "key": "docs/Evenements.jsx",
+      "value": [
+        {
+          "description": "----------------------\nMéthodes et évènements \n----------------------\nDe nombreuses méthodes sont liées à la classe Map et elles peuvent être déclenchées à partir d'actions appelées \"Fires\".\nLes plus utilisées sont on(type, listener, opt_this), once(type, listener, opt_this) qui contiennent \nune fonction afin d'obtenir des informations de la classe \"parent\".\nCes méthodes sont aussi héritées pour d'autres classes comme celles prenant en charge les sources de données.\n\nDans la version actuelle d'OL, on peut classer les déclencheurs des méthodes selon cinq types :\n\nol.events.Event : un évènement quelconque par le fire change.\n\nol.Object.Event : Les évènements liés à un objet de la classe Map.\n\nol.MapBrowserEvent : Les évènements liés au navigateur web (click, dblclick, pointerdrag, pointermove, singleclick).\n\nol.MapEvent : Les évènement liés à la carte (moveend, movestart, postrender).\n\nol.render.Event : Les évènements liés à un rendu du document (postcompose, precompose).\n\nL'exemple ci-après montre comment obtenir le niveau de zoom dans la console à la fin du défilement de la carte.",
+          "displayName": "Evenements",
+          "methods": [],
+          "actualName": "Evenements"
         }
       ]
     }
