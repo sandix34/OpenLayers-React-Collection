@@ -124,63 +124,6 @@
       ]
     },
     {
-      "key": "docs/FondCarteStamenTerrain.jsx",
-      "value": [
-        {
-          "description": "---------------------\nLes fonds de carte OL\n---------------------\n\nOn appelle communément fonds de carte,\nun ensemble de données géographiques compilées\nqui permettent de situer des vecteurs\net/ou des rasters spécifiques.\nLes fonds de carte ont une résolution spatiale\net des informations plus ou moins détaillées.\n\nOL implémente directement plusieurs d'entre eux dans son API,\nainsi on dispose des sources de données tuilées suivantes :\nBingMaps (avec clé),\nStamen,\nCartoDB (avec clé)\net OpenStreetMap (OSM).",
-          "displayName": "FondCarteStamenTerrain",
-          "methods": [
-            {
-              "name": "updateMap",
-              "docblock": null,
-              "modifiers": [],
-              "params": [],
-              "returns": null
-            }
-          ],
-          "actualName": "FondCarteStamenTerrain"
-        }
-      ]
-    },
-    {
-      "key": "docs/FondCarteStamenToner.jsx",
-      "value": [
-        {
-          "description": "---------------------\nLes fonds de carte OL\n---------------------\n\nOn appelle communément fonds de carte,\nun ensemble de données géographiques compilées\nqui permettent de situer des vecteurs\net/ou des rasters spécifiques.\nLes fonds de carte ont une résolution spatiale\net des informations plus ou moins détaillées.\n\nOL implémente directement plusieurs d'entre eux dans son API,\nainsi on dispose des sources de données tuilées suivantes :\nBingMaps (avec clé),\nStamen,\nCartoDB (avec clé)\net OpenStreetMap (OSM).",
-          "displayName": "FondCarteStamenToner",
-          "methods": [
-            {
-              "name": "updateMap",
-              "docblock": null,
-              "modifiers": [],
-              "params": [],
-              "returns": null
-            }
-          ],
-          "actualName": "FondCarteStamenToner"
-        }
-      ]
-    },
-    {
-      "key": "docs/FondCarteStamenWatercolor.jsx",
-      "value": [
-        {
-          "description": "---------------------\nLes fonds de carte OL\n---------------------\n\nOn appelle communément fonds de carte,\nun ensemble de données géographiques compilées\nqui permettent de situer des vecteurs\net/ou des rasters spécifiques.\nLes fonds de carte ont une résolution spatiale\net des informations plus ou moins détaillées.\n\nOL implémente directement plusieurs d'entre eux dans son API,\nainsi on dispose des sources de données tuilées suivantes :\nBingMaps (avec clé),\nStamen,\nCartoDB (avec clé)\net OpenStreetMap (OSM).",
-          "displayName": "FondCarteStamenWatercolor",
-          "methods": [
-            {
-              "name": "updateMap",
-              "docblock": null,
-              "modifiers": [],
-              "params": [],
-              "returns": null
-            }
-          ],
-          "actualName": "FondCarteStamenWatercolor"
-        }
-      ]
-    },
-    {
       "key": "docs/IconsLabels.jsx",
       "value": [
         {
@@ -330,6 +273,39 @@
           "displayName": "VecteurGeometry",
           "methods": [],
           "actualName": "VecteurGeometry"
+        }
+      ]
+    },
+    {
+      "key": "docs/FondCarteStamenTerrain.jsx",
+      "value": [
+        {
+          "description": "---------------------\nLes fonds de carte OL\n---------------------\n\nOn appelle communément fonds de carte,\nun ensemble de données géographiques compilées\nqui permettent de situer des vecteurs\net/ou des rasters spécifiques.\nLes fonds de carte ont une résolution spatiale\net des informations plus ou moins détaillées.\n\nOL implémente directement plusieurs d'entre eux dans son API,\nainsi on dispose des sources de données tuilées suivantes :\nBingMaps (avec clé),\nStamen,\nCartoDB (avec clé)\net OpenStreetMap (OSM).",
+          "displayName": "FondCarteStamenTerrain",
+          "methods": [],
+          "actualName": "FondCarteStamenTerrain"
+        }
+      ]
+    },
+    {
+      "key": "docs/FondCarteStamenToner.jsx",
+      "value": [
+        {
+          "description": "---------------------\nLes fonds de carte OL\n---------------------\n\nOn appelle communément fonds de carte,\nun ensemble de données géographiques compilées\nqui permettent de situer des vecteurs\net/ou des rasters spécifiques.\nLes fonds de carte ont une résolution spatiale\net des informations plus ou moins détaillées.\n\nOL implémente directement plusieurs d'entre eux dans son API,\nainsi on dispose des sources de données tuilées suivantes :\nBingMaps (avec clé),\nStamen,\nCartoDB (avec clé)\net OpenStreetMap (OSM).",
+          "displayName": "FondCarteStamenToner",
+          "methods": [],
+          "actualName": "FondCarteStamenToner"
+        }
+      ]
+    },
+    {
+      "key": "docs/FondCarteStamenWatercolor.jsx",
+      "value": [
+        {
+          "description": "---------------------\nLes fonds de carte OL\n---------------------\n\nOn appelle communément fonds de carte,\nun ensemble de données géographiques compilées\nqui permettent de situer des vecteurs\net/ou des rasters spécifiques.\nLes fonds de carte ont une résolution spatiale\net des informations plus ou moins détaillées.\n\nOL implémente directement plusieurs d'entre eux dans son API,\nainsi on dispose des sources de données tuilées suivantes :\nBingMaps (avec clé),\nStamen,\nCartoDB (avec clé)\net OpenStreetMap (OSM).",
+          "displayName": "FondCarteStamenWatercolor",
+          "methods": [],
+          "actualName": "FondCarteStamenWatercolor"
         }
       ]
     }
