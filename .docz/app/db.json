@@ -34,25 +34,6 @@
   },
   "props": [
     {
-      "key": "docs/CarteWMS.jsx",
-      "value": [
-        {
-          "description": "----------------\nLe protocole WMS\n----------------\nLe WMS fournit une image géoréférencée pour laquelle plusieurs \nopérations sont disponibles\ncomme afficher une donnée avec la géométrie\net les valeurs attributaires correspondantes.\nOn note que la donnée spatiale transmise par le serveur \ncartographique peut être à l'origine un vecteur ou un raster.\n\nDans OL, il existe plusieurs manières de charger les protocoles WMS :\n\n- En tant qu'image par la classe :\nol.source.ImageWMS  pour la source de données\nla classe ol.layer.Image  pour afficher la couche SIG\n\n- En tant que donnée tuilée depuis un serveur WMS par la classe :\nol.source.TileWMS  pour la source\nol.layer.Tile  pour la couche SIG\n\nL'exemple ci-après montre comment utiliser des flux WMS en format Tuilé et Image :",
-          "displayName": "CarteWMS",
-          "methods": [
-            {
-              "name": "updateMap",
-              "docblock": null,
-              "modifiers": [],
-              "params": [],
-              "returns": null
-            }
-          ],
-          "actualName": "CarteWMS"
-        }
-      ]
-    },
-    {
       "key": "docs/Clusters.jsx",
       "value": [
         {
@@ -298,6 +279,17 @@
           "displayName": "CarteWFS",
           "methods": [],
           "actualName": "CarteWFS"
+        }
+      ]
+    },
+    {
+      "key": "docs/CarteWMS.jsx",
+      "value": [
+        {
+          "description": "----------------\nLe protocole WMS\n----------------\nLe WMS fournit une image géoréférencée pour laquelle plusieurs \nopérations sont disponibles\ncomme afficher une donnée avec la géométrie\net les valeurs attributaires correspondantes.\nOn note que la donnée spatiale transmise par le serveur \ncartographique peut être à l'origine un vecteur ou un raster.\n\nDans OL, il existe plusieurs manières de charger les protocoles WMS :\n\n- En tant qu'image par la classe :\nol.source.ImageWMS  pour la source de données\nla classe ol.layer.Image  pour afficher la couche SIG\n\n- En tant que donnée tuilée depuis un serveur WMS par la classe :\nol.source.TileWMS  pour la source\nol.layer.Tile  pour la couche SIG\n\nL'exemple ci-après montre comment utiliser des flux WMS en format Tuilé et Image :",
+          "displayName": "CarteWMS",
+          "methods": [],
+          "actualName": "CarteWMS"
         }
       ]
     }
