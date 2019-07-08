@@ -6,85 +6,86 @@ menu: Les couches SIG
 import { Playground } from 'docz'
 import CarteWFS from './CarteWFS'
 
+Le Web Feature Service (WFS) est un protocole HTTP d’échange de données vecteurs qui permet “côté client” de connaître les structures et les sources de la donnée spatiale. En clair, le serveur cartographique fournit une URL avec plusieurs paramètres pour appeler et lister les entités du vecteur dans un format spécifique (XML, JSON, etc).
+
+Dans OpenLayers, il est alors possible de prendre en charge le protocole WFS comme une source de données vectorielles externe en précisant le format de l'application de l'URL (ici : JSON):
 
 <CarteWFS />
 
 ```jsx
 import React, { Component } from "react";
+
+// classes nécéssaires pour afficher la carte
 import Map from 'ol/Map';
 import View from 'ol/View';
 import 'ol/ol.css';
 
+// Fournit une source d’entités pour les couches vectorielles.
 import VectorSource from 'ol/source/Vector';
-import GeoJSON from 'ol/format/GeoJSON';
+
+// Données vectorielles rendues côté client.
 import VectorLayer from 'ol/layer/Vector';
+
+// Format d'entité pour la lecture et l'écriture de données au format GeoJSON.
+import GeoJSON from 'ol/format/GeoJSON';
+
 
 class CarteWFS extends Component {
   constructor(props) {
-    super(props);
+    super(props)
 
-    this.state = { 
-        center: [-8233510, 4980620], 
-        zoom: 13 
-    };
+    this.state = {
+      center: [-8908887.277395891, 5381918.072437216],
+      zoom: 10,
+    }
 
-    // Déclaration de la source de la couche en format WFS 
+    // Sources de données et couche OpenStreetMap
+    this.osm = new TileLayer({
+      source: new OSM(),
+    })
+
+    // Déclaration de la source de la couche en format WFS
     this.sourceWFS = new VectorSource({
-	// Chargement du lien WFS en format json
-	url: 'https://map.geomatick.com/geoserver/wfs?service=WFS&' +
-	'version=1.1.0&request=GetFeature&typename=tiger:tiger_roads&' +
-	'outputFormat=application/json',
-	format: new GeoJSON(),
-	serverType: 'geoserver'
-    });
+      // Chargement du lien WFS en format json
+      url:
+        "https://ahocevar.com/geoserver/wfs?service=WFS&" +
+        "version=1.1.0&request=GetFeature&typename=osm:water_areas&" +
+        "outputFormat=application/json&srsname=EPSG:3857&",
+      format: new GeoJSON(),
+      serverType: "geoserver",
+    })
 
-    // Déclaration de la couche WFS 
-    this.vecteurWFS = new VectorLayer({ 
-	source: this.sourceWFS 
-    });
+    // Déclaration de la couche WFS
+    this.vecteurWFS = new VectorLayer({
+      source: this.sourceWFS,
+      style: new Style({
+        stroke: new Stroke({
+          color: "rgba(0, 0, 255, 1.0)",
+          width: 2,
+        }),
+      }),
+    })
 
+    // Déclaration de la carte
     this.olmap = new Map({
       target: null,
-      layers: [this.vecteurWFS],
+      layers: [this.osm, this.vecteurWFS],
       view: new View({
         center: this.state.center,
-        zoom: this.state.zoom
-      })
-    });
-  }
-
-  updateMap() {
-    this.olmap.getView().setCenter(this.state.center);
-    this.olmap.getView().setZoom(this.state.zoom);
+        zoom: this.state.zoom,
+      }),
+    })
   }
 
   componentDidMount() {
-    this.olmap.setTarget("map8");
-
-    // Listen to map changes
-    this.olmap.on("moveend", () => {
-      let center = this.olmap.getView().getCenter();
-      let zoom = this.olmap.getView().getZoom();
-      this.setState({ center, zoom });
-    });
+    // Défini l'id de l'élément dans lequel la carte est rendue.
+    this.olmap.setTarget("map8")
   }
-
-  shouldComponentUpdate(nextProps, nextState) {
-    let center = this.olmap.getView().getCenter();
-    let zoom = this.olmap.getView().getZoom();
-    if (center === nextState.center && zoom === nextState.zoom) return false;
-    return true;
-  }
-
 
   render() {
-    this.updateMap(); // Update map on render?
-    return (
-      <div id="map8" style={{ width: "100%", height: "360px" }}>
-      </div>
-    );
+    return <div id="map8" style={{ width: "100%", height: "360px" }}></div>
   }
 }
 
-export default CarteWFS;
+export default CarteWFS
 ```

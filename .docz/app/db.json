@@ -34,25 +34,6 @@
   },
   "props": [
     {
-      "key": "docs/CarteWFS.jsx",
-      "value": [
-        {
-          "description": "-----------------\nLe protocole WFS\n----------------\n\nLe WFS est un protocole HTTP d’échange de données vecteurs qui permet “côté client”\nde connaître les structures et les sources de la donnée spatiale.\nEn clair, le serveur cartographique fournit une URL avec plusieurs paramètres\npour appeler et lister les entités du vecteur dans un format spécifique (XML, JSON, etc).\n\nDans OL, il est alors possible de prendre en charge le protocole WFS \ncomme une source de données vectorielles externe en précisant \nle format de l'application de l'URL (ici : JSON):",
-          "displayName": "CarteWFS",
-          "methods": [
-            {
-              "name": "updateMap",
-              "docblock": null,
-              "modifiers": [],
-              "params": [],
-              "returns": null
-            }
-          ],
-          "actualName": "CarteWFS"
-        }
-      ]
-    },
-    {
       "key": "docs/CarteWMS.jsx",
       "value": [
         {
@@ -306,6 +287,17 @@
           "displayName": "FondCarteStamenWatercolor",
           "methods": [],
           "actualName": "FondCarteStamenWatercolor"
+        }
+      ]
+    },
+    {
+      "key": "docs/CarteWFS.jsx",
+      "value": [
+        {
+          "description": "-----------------\nLe protocole WFS\n----------------\n\nLe WFS est un protocole HTTP d’échange de données vecteurs qui permet “côté client”\nde connaître les structures et les sources de la donnée spatiale.\nEn clair, le serveur cartographique fournit une URL avec plusieurs paramètres\npour appeler et lister les entités du vecteur dans un format spécifique (XML, JSON, etc).\n\nDans OL, il est alors possible de prendre en charge le protocole WFS\ncomme une source de données vectorielles externe en précisant\nle format de l'application de l'URL (ici : JSON):",
+          "displayName": "CarteWFS",
+          "methods": [],
+          "actualName": "CarteWFS"
         }
       ]
     }
