@@ -1,11 +1,13 @@
 ---
-name: Icons et les Labels
+name: Les icônes et les labels
 menu: Les styles
 ---
 
 import { Playground } from 'docz'
 import IconsLabels from './IconsLabels'
 
+Il est possible d'associer des icons et des labels aux vecteurs.
+Pour afficher un icon, la classe [Icon](https://openlayers.org/en/latest/apidoc/module-ol_style_Icon-Icon.html) possède de nombreuses options liées notamment à la source, l'ancrage et au style de l'image.
 
 <IconsLabels />
 
@@ -56,7 +58,7 @@ class IconsLabels extends Component {
           anchorYUnits: "pixels",
           anchorOrigin: "bottom-left",
           src: "../icons/icon.png",
-          scale: 0.3
+          scale: 0.3,
         })
       )
     });
@@ -87,31 +89,12 @@ class IconsLabels extends Component {
     });
   }
 
-  updateMap() {
-    this.olmap.getView().setCenter(this.state.center);
-    this.olmap.getView().setZoom(this.state.zoom);
-  }
-
   componentDidMount() {
+    // Défini l'id de l'élément dans lequel la carte est rendue.
     this.olmap.setTarget("map14");
-
-    // Listen to map changes
-    this.olmap.on("moveend", () => {
-      let center = this.olmap.getView().getCenter();
-      let zoom = this.olmap.getView().getZoom();
-      this.setState({ center, zoom });
-    });
-  }
-
-  shouldComponentUpdate(nextProps, nextState) {
-    let center = this.olmap.getView().getCenter();
-    let zoom = this.olmap.getView().getZoom();
-    if (center === nextState.center && zoom === nextState.zoom) return false;
-    return true;
   }
 
   render() {
-    this.updateMap(); // Update map on render?
     return <div id="map14" style={{ width: "100%", height: "360px" }} />;
   }
 }
