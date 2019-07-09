@@ -223,25 +223,6 @@
       ]
     },
     {
-      "key": "docs/StylesGeometry.jsx",
-      "value": [
-        {
-          "description": "--------------------------------------------\n Les Styles pour les différentes géométries\n--------------------------------------------\nSi on considère les géométries basiques d'une entité géographique,\nc'est-à-dire un point, une ligne, un polygone ou un cercle,\nde quoi a-t-on besoin à minima pour les observer?\nun contour ol.style.Stroke  pour lequel on associe une couleur, un type de ligne et une épaisseur ;\nun remplissage ol.style.Fill  pour lequel on associe une couleur ;\net pour le cercle ol.style.Circle , une dimension de rayon radius.\nOn note que la classe ol.style.Circle ainsi que les classes ol.style.Icon et ol.style.\nRegularShape sont des sous-classes de ol.style.Image .\nLa couleur ol.color  est définie par des codes hexadécimaux ou le rgba.\nAinsi, par défaut, OL affecte le style suivant au données vectorielles :",
-          "displayName": "StylesGeometry",
-          "methods": [
-            {
-              "name": "updateMap",
-              "docblock": null,
-              "modifiers": [],
-              "params": [],
-              "returns": null
-            }
-          ],
-          "actualName": "StylesGeometry"
-        }
-      ]
-    },
-    {
       "key": "docs/Translation.jsx",
       "value": [
         {
@@ -282,6 +263,25 @@
           "displayName": "IconsLabels",
           "methods": [],
           "actualName": "IconsLabels"
+        }
+      ]
+    },
+    {
+      "key": "docs/StylesGeometry.jsx",
+      "value": [
+        {
+          "description": "--------------------------------------------\n Les Styles pour les différentes géométries\n--------------------------------------------\nSi on considère les géométries basiques d'une entité géographique,\nc'est-à-dire un point, une ligne, un polygone ou un cercle,\nde quoi a-t-on besoin à minima pour les observer?\nun contour ol.style.Stroke  pour lequel on associe une couleur, un type de ligne et une épaisseur ;\nun remplissage ol.style.Fill  pour lequel on associe une couleur ;\net pour le cercle ol.style.Circle , une dimension de rayon radius.\nOn note que la classe ol.style.Circle ainsi que les classes ol.style.Icon et ol.style.\nRegularShape sont des sous-classes de ol.style.Image .\nLa couleur ol.color  est définie par des codes hexadécimaux ou le rgba.\nAinsi, par défaut, OL affecte le style suivant au données vectorielles :",
+          "displayName": "StylesGeometry",
+          "methods": [
+            {
+              "name": "updateMap",
+              "docblock": null,
+              "modifiers": [],
+              "params": [],
+              "returns": null
+            }
+          ],
+          "actualName": "StylesGeometry"
         }
       ]
     }
