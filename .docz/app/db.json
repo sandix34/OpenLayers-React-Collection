@@ -311,19 +311,6 @@
       }
     },
     {
-      "key": "docs/Clusters.mdx",
-      "value": {
-        "name": "Les clusters",
-        "menu": "Les groupes de couches, clusters et overlays",
-        "id": "47ae5ec3c073241850fe9518b9342e04",
-        "filepath": "docs/Clusters.mdx",
-        "link": "https://github.com/sandix34/OpenLayers-React-Collection/edit/master/docs/Clusters.mdx",
-        "slug": "docs-clusters",
-        "route": "/docs-clusters",
-        "headings": []
-      }
-    },
-    {
       "key": "docs/Controles.mdx",
       "value": {
         "name": "Les contrôles",
@@ -333,6 +320,19 @@
         "link": "https://github.com/sandix34/OpenLayers-React-Collection/edit/master/docs/Controles.mdx",
         "slug": "docs-controles",
         "route": "/docs-controles",
+        "headings": []
+      }
+    },
+    {
+      "key": "docs/Clusters.mdx",
+      "value": {
+        "name": "Les clusters",
+        "menu": "Les groupes de couches, clusters et overlays",
+        "id": "47ae5ec3c073241850fe9518b9342e04",
+        "filepath": "docs/Clusters.mdx",
+        "link": "https://github.com/sandix34/OpenLayers-React-Collection/edit/master/docs/Clusters.mdx",
+        "slug": "docs-clusters",
+        "route": "/docs-clusters",
         "headings": []
       }
     },

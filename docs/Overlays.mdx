@@ -6,21 +6,25 @@ menu: Les groupes de couches, clusters et overlays
 import { Playground } from 'docz'
 import Overlays from './Overlays'
 
+Les [Overlay](https://openlayers.org/en/latest/apidoc/module-ol_Overlay-Overlay.html) sont des widgets visibles ajoutés à l'objet de la classe [Map](https://openlayers.org/en/latest/apidoc/module-ol_Map-Map.html) contrairement aux contrôles, ils ne se trouvent pas à une position fixe sur l'écran, mais sont liés à une coordonnée géographique.
+
 
 <Overlays />
 
 ```jsx
 import React, { Component } from "react";
 
-// classes required to display the map
+// classes nécéssaires pour afficher la carte
 import "ol/ol.css";
 import Map from "ol/Map";
 import View from "ol/View";
 import TileLayer from "ol/layer/Tile";
 import OSM from "ol/source/OSM";
-// utility method for projection
+
+// Méthode utile pour la projection
 import { fromLonLat } from "ol/proj";
-// An item to display on the map and associated with a single map slot
+
+// Un élément à afficher sur la carte et associé à un seul emplacement de carte
 import Overlay from "ol/Overlay";
 
 class Overlays extends Component {
@@ -32,12 +36,12 @@ class Overlays extends Component {
       zoom: 2
     };
 
-    // Data sources and the OpenStreetMap layer
+    // Sources de données et couche OpenStreetMap
     this.osm = new TileLayer({
       source: new OSM()
     });
 
-    // Declaration of the map
+    // Déclaration de la carte
     this.olmap = new Map({
       target: null,
       layers: [this.osm],
@@ -49,9 +53,10 @@ class Overlays extends Component {
   }
 
   componentDidMount() {
+    // Défini l'id de l'élément dans lequel la carte est rendue.
     this.olmap.setTarget("map15");
 
-    // Déclaration of the Marker
+    // Déclaration du Marker
     this.marker = new Overlay({
       position: fromLonLat([-43.3307, -22.9201]),
       positioning: "center-center",
@@ -60,7 +65,7 @@ class Overlays extends Component {
     });
     //console.log(this.marker);
 
-    // Adding to the Map Object
+    // Ajout à l'objet Map
     this.olmap.addOverlay(this.marker);
     console.log(this.olmap);
   }
