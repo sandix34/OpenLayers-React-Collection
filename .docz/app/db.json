@@ -56,25 +56,6 @@
       ]
     },
     {
-      "key": "docs/Clusters.jsx",
-      "value": [
-        {
-          "description": "--------------------------------------------\n LES CLUSTERS\n--------------------------------------------\nLes clusters permettent de regrouper et de montrer le nombre\nd'entités géographiques d'un vecteur en focntion d'un niveau de zoom sur la carte.",
-          "displayName": "Clusters",
-          "methods": [
-            {
-              "name": "updateMap",
-              "docblock": null,
-              "modifiers": [],
-              "params": [],
-              "returns": null
-            }
-          ],
-          "actualName": "Clusters"
-        }
-      ]
-    },
-    {
       "key": "docs/Controles.jsx",
       "value": [
         {
@@ -274,6 +255,17 @@
           "displayName": "StylesGeometry",
           "methods": [],
           "actualName": "StylesGeometry"
+        }
+      ]
+    },
+    {
+      "key": "docs/Clusters.jsx",
+      "value": [
+        {
+          "description": "--------------------------------------------\n LES CLUSTERS\n--------------------------------------------\nLes clusters permettent de regrouper et de montrer le nombre\nd'entités géographiques d'un vecteur en focntion d'un niveau de zoom sur la carte.",
+          "displayName": "Clusters",
+          "methods": [],
+          "actualName": "Clusters"
         }
       ]
     }
