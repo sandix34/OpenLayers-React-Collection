@@ -6,6 +6,15 @@ menu: Les interractions
 import { Playground } from 'docz'
 import Dessin from './Dessin'
 
+Il est possible de créer des nouvelles entités avec OpenLayer avec la classe [Draw](https://openlayers.org/en/latest/apidoc/module-ol_interaction_Draw-Draw.html).
+Qui dit création d'une entité dit forcément réception de cette donnée
+dans une source vectorielle. Ainsi, il est indispensable de préciser
+la source de donnée à l'objet de l'interaction ainsi que la géométrie dessinée.
+
+L' exemple suivant permet de créer des points et on ajoute un style spécifique à
+l'interaction qui est différente de celui du vecteur.
+
+ 
 
 <Dessin />
 
@@ -90,6 +99,7 @@ class Dessin extends Component {
   }
 
   componentDidMount() {
+    // Défini l'id de l'élément dans lequel la carte est rendue.
     this.olmap.setTarget("map19");
 
     // Déclaration de l'interaction
