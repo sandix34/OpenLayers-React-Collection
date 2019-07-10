@@ -6,6 +6,13 @@ menu: Les interractions
 import { Playground } from 'docz'
 import Translation from './Translation'
 
+La classe [Translate](https://openlayers.org/en/latest/apidoc/module-ol_interaction_Translate-Translate.html) permet de déplacer des entités géographiques du vecteur.
+Il est possible de spécifier des options
+comme les conditions de sélection (au clic par exemple),
+les filtres de sélection des couches
+et la récupération des objets et le style des entités selectionnées.
+
+Ici, on spécifie la couche prise en compte dans la translation.
 
 <Translation />
 
@@ -63,6 +70,7 @@ class Translation extends Component {
     this.translation = new Translate({
       layers: [this.vecteurGeoJSON]
     });
+    // ajout à l'objet Map
     this.olmap.addInteraction(this.translation);
   }
 
