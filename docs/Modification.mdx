@@ -6,6 +6,13 @@ menu: Les interractions
 import { Playground } from 'docz'
 import Modification from './Modification'
 
+La modification de données vectorielles est réalisée en ajoutant
+l'interaction [Modify](https://openlayers.org/en/latest/apidoc/module-ol_interaction_Modify-Modify.html) à l'objet [Map](https://openlayers.org/en/latest/apidoc/module-ol_Map-Map.html).
+On indique la source du vecteur à modifier dans l'objet de l'interaction
+et d'autres options sont possibles comme le style
+et les conditions de modifications des sommets.
+
+Le code suivant montre la mise en place d'une modification simple.
 
 <Modification />
 
@@ -57,6 +64,7 @@ class Modification extends Component {
   }
 
   componentDidMount() {
+    // Défini l'id de l'élément dans lequel la carte est rendue.
     this.olmap.setTarget("map21");
 
     // Déclaration de l'interaction

@@ -56,6 +56,17 @@
       ]
     },
     {
+      "key": "docs/Clusters.jsx",
+      "value": [
+        {
+          "description": "--------------------------------------------\n LES CLUSTERS\n--------------------------------------------\nLes clusters permettent de regrouper et de montrer le nombre\nd'entités géographiques d'un vecteur en focntion d'un niveau de zoom sur la carte.",
+          "displayName": "Clusters",
+          "methods": [],
+          "actualName": "Clusters"
+        }
+      ]
+    },
+    {
       "key": "docs/Controles.jsx",
       "value": [
         {
@@ -118,6 +129,17 @@
           "displayName": "FondCarteStamenWatercolor",
           "methods": [],
           "actualName": "FondCarteStamenWatercolor"
+        }
+      ]
+    },
+    {
+      "key": "docs/IconsLabels.jsx",
+      "value": [
+        {
+          "description": "--------------------------------------------\n Les Icons et les Labels\n--------------------------------------------\nIl est possible d'associer des icons et des labels aux vecteurs.\nPour afficher un icon, la classe ol.style.Icon  est caractérisée par de\nnombreuses options liées notamment à la source, l'ancrage et au style de l'image.",
+          "displayName": "IconsLabels",
+          "methods": [],
+          "actualName": "IconsLabels"
         }
       ]
     },
@@ -204,6 +226,17 @@
       ]
     },
     {
+      "key": "docs/StylesGeometry.jsx",
+      "value": [
+        {
+          "description": "--------------------------------------------\n Les Styles pour les différentes géométries\n--------------------------------------------\nSi on considère les géométries basiques d'une entité géographique,\nc'est-à-dire un point, une ligne, un polygone ou un cercle,\nde quoi a-t-on besoin à minima pour les observer?\nun contour ol.style.Stroke  pour lequel on associe une couleur, un type de ligne et une épaisseur ;\nun remplissage ol.style.Fill  pour lequel on associe une couleur ;\net pour le cercle ol.style.Circle , une dimension de rayon radius.\nOn note que la classe ol.style.Circle ainsi que les classes ol.style.Icon et ol.style.\nRegularShape sont des sous-classes de ol.style.Image .\nLa couleur ol.color  est définie par des codes hexadécimaux ou le rgba.\nAinsi, par défaut, OL affecte le style suivant au données vectorielles :",
+          "displayName": "StylesGeometry",
+          "methods": [],
+          "actualName": "StylesGeometry"
+        }
+      ]
+    },
+    {
       "key": "docs/Translation.jsx",
       "value": [
         {
@@ -233,39 +266,6 @@
           "displayName": "VecteurGeometry",
           "methods": [],
           "actualName": "VecteurGeometry"
-        }
-      ]
-    },
-    {
-      "key": "docs/IconsLabels.jsx",
-      "value": [
-        {
-          "description": "--------------------------------------------\n Les Icons et les Labels\n--------------------------------------------\nIl est possible d'associer des icons et des labels aux vecteurs.\nPour afficher un icon, la classe ol.style.Icon  est caractérisée par de\nnombreuses options liées notamment à la source, l'ancrage et au style de l'image.",
-          "displayName": "IconsLabels",
-          "methods": [],
-          "actualName": "IconsLabels"
-        }
-      ]
-    },
-    {
-      "key": "docs/StylesGeometry.jsx",
-      "value": [
-        {
-          "description": "--------------------------------------------\n Les Styles pour les différentes géométries\n--------------------------------------------\nSi on considère les géométries basiques d'une entité géographique,\nc'est-à-dire un point, une ligne, un polygone ou un cercle,\nde quoi a-t-on besoin à minima pour les observer?\nun contour ol.style.Stroke  pour lequel on associe une couleur, un type de ligne et une épaisseur ;\nun remplissage ol.style.Fill  pour lequel on associe une couleur ;\net pour le cercle ol.style.Circle , une dimension de rayon radius.\nOn note que la classe ol.style.Circle ainsi que les classes ol.style.Icon et ol.style.\nRegularShape sont des sous-classes de ol.style.Image .\nLa couleur ol.color  est définie par des codes hexadécimaux ou le rgba.\nAinsi, par défaut, OL affecte le style suivant au données vectorielles :",
-          "displayName": "StylesGeometry",
-          "methods": [],
-          "actualName": "StylesGeometry"
-        }
-      ]
-    },
-    {
-      "key": "docs/Clusters.jsx",
-      "value": [
-        {
-          "description": "--------------------------------------------\n LES CLUSTERS\n--------------------------------------------\nLes clusters permettent de regrouper et de montrer le nombre\nd'entités géographiques d'un vecteur en focntion d'un niveau de zoom sur la carte.",
-          "displayName": "Clusters",
-          "methods": [],
-          "actualName": "Clusters"
         }
       ]
     }
@@ -311,19 +311,6 @@
       }
     },
     {
-      "key": "docs/Controles.mdx",
-      "value": {
-        "name": "Les contrôles",
-        "menu": "La classe Map",
-        "id": "fad8db50805ef97f02433c0fc8b2ebbf",
-        "filepath": "docs/Controles.mdx",
-        "link": "https://github.com/sandix34/OpenLayers-React-Collection/edit/master/docs/Controles.mdx",
-        "slug": "docs-controles",
-        "route": "/docs-controles",
-        "headings": []
-      }
-    },
-    {
       "key": "docs/Clusters.mdx",
       "value": {
         "name": "Les clusters",
@@ -333,6 +320,19 @@
         "link": "https://github.com/sandix34/OpenLayers-React-Collection/edit/master/docs/Clusters.mdx",
         "slug": "docs-clusters",
         "route": "/docs-clusters",
+        "headings": []
+      }
+    },
+    {
+      "key": "docs/Controles.mdx",
+      "value": {
+        "name": "Les contrôles",
+        "menu": "La classe Map",
+        "id": "fad8db50805ef97f02433c0fc8b2ebbf",
+        "filepath": "docs/Controles.mdx",
+        "link": "https://github.com/sandix34/OpenLayers-React-Collection/edit/master/docs/Controles.mdx",
+        "slug": "docs-controles",
+        "route": "/docs-controles",
         "headings": []
       }
     },
