@@ -207,6 +207,17 @@
       ]
     },
     {
+      "key": "docs/Selection.jsx",
+      "value": [
+        {
+          "description": "------------------------\nSelection\n------------------------\nLa classe ol.interaction.Select, comme son nom l'indique,\npermet de sélectionner des entités géographiques du vecteur.\nElle est fournie avec de nombreuses options comme\nles conditions de sélection (au clic par exemple),\nles filtres de sélection des couches\net la récupération des objets et le style des entités selectionnées.\nDe manière basique, on instancie la classe puis on l'ajoute à l'objet Map.\nPar défaut, la sélection s'applique au clic sur une entité du vecteur avec un style générique.\nOn note que les entités sélectionnées sont ajoutées à une couche interne à l'API non déclarée dans le script.",
+          "displayName": "Selection",
+          "methods": [],
+          "actualName": "Selection"
+        }
+      ]
+    },
+    {
       "key": "docs/StylesGeometry.jsx",
       "value": [
         {
@@ -247,17 +258,6 @@
           "displayName": "VecteurGeometry",
           "methods": [],
           "actualName": "VecteurGeometry"
-        }
-      ]
-    },
-    {
-      "key": "docs/Selection.jsx",
-      "value": [
-        {
-          "description": "------------------------\nSelection\n------------------------\nLa classe ol.interaction.Select, comme son nom l'indique,\npermet de sélectionner des entités géographiques du vecteur.\nElle est fournie avec de nombreuses options comme\nles conditions de sélection (au clic par exemple),\nles filtres de sélection des couches\net la récupération des objets et le style des entités selectionnées.\nDe manière basique, on instancie la classe puis on l'ajoute à l'objet Map.\nPar défaut, la sélection s'applique au clic sur une entité du vecteur avec un style générique.\nOn note que les entités sélectionnées sont ajoutées à une couche interne à l'API non déclarée dans le script.",
-          "displayName": "Selection",
-          "methods": [],
-          "actualName": "Selection"
         }
       ]
     }
