@@ -8,7 +8,7 @@
   "dependencies": {
     "docz": "^1.2.0",
     "docz-theme-default": "^1.2.0",
-    "gatsby": "^2.9.4",
+    "gatsby": "^2.32.13",
     "gatsby-image": "^2.1.4",
     "gatsby-plugin-manifest": "^2.1.1",
     "gatsby-plugin-offline": "^2.1.3",
